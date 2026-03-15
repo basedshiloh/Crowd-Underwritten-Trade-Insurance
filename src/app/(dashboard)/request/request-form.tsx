@@ -17,53 +17,53 @@ export function RequestForm({
   return (
     <form
       action={formAction}
-      className="flex flex-col gap-4 rounded-xl border border-stroke-5 bg-background-7 p-6 dark:border-stroke-6"
+      className="flex flex-col gap-4 rounded-xl border border-stroke-3 bg-background-4 p-6 dark:border-stroke-6 dark:bg-background-8"
     >
-      <label className="flex flex-col gap-1">
-        <span className="text-tagline-1 font-medium text-secondary dark:text-accent">Coverage (SOL)</span>
+      <label className="flex flex-col gap-1.5">
+        <span className="text-tagline-1 font-semibold text-secondary dark:text-accent">Coverage (SOL)</span>
         <input
           type="number"
           name="coverageAmountSol"
           step="0.1"
           min="0.1"
           required
-          className="rounded border border-stroke-3 bg-background-4 px-3 py-2 text-secondary dark:border-stroke-6 dark:bg-background-9 dark:text-accent"
+          className="rounded-lg border border-stroke-3 bg-background-1 px-3 py-2.5 text-secondary placeholder:text-secondary/50 dark:border-stroke-6 dark:bg-background-9 dark:text-accent dark:placeholder:text-accent/50"
           placeholder="3"
         />
       </label>
-      <label className="flex flex-col gap-1">
-        <span className="text-tagline-1 font-medium text-secondary dark:text-accent">Token symbol / mint</span>
+      <label className="flex flex-col gap-1.5">
+        <span className="text-tagline-1 font-semibold text-secondary dark:text-accent">Token symbol / mint</span>
         <input
           type="text"
           name="tokenMint"
           required
-          className="rounded border border-stroke-3 bg-background-4 px-3 py-2 text-secondary dark:border-stroke-6 dark:bg-background-9 dark:text-accent"
+          className="rounded-lg border border-stroke-3 bg-background-1 px-3 py-2.5 text-secondary placeholder:text-secondary/50 dark:border-stroke-6 dark:bg-background-9 dark:text-accent dark:placeholder:text-accent/50"
           placeholder="TOKENX"
         />
       </label>
-      <label className="flex flex-col gap-1">
-        <span className="text-tagline-1 font-medium text-secondary dark:text-accent">Duration (hours)</span>
+      <label className="flex flex-col gap-1.5">
+        <span className="text-tagline-1 font-semibold text-secondary dark:text-accent">Duration (hours)</span>
         <input
           type="number"
           name="durationHours"
           min="1"
           defaultValue={12}
-          className="rounded border border-stroke-3 bg-background-4 px-3 py-2 text-secondary dark:border-stroke-6 dark:bg-background-9 dark:text-accent"
+          className="rounded-lg border border-stroke-3 bg-background-1 px-3 py-2.5 text-secondary dark:border-stroke-6 dark:bg-background-9 dark:text-accent"
         />
       </label>
-      <label className="flex flex-col gap-1">
-        <span className="text-tagline-1 font-medium text-secondary dark:text-accent">Premium (SOL, optional)</span>
+      <label className="flex flex-col gap-1.5">
+        <span className="text-tagline-1 font-semibold text-secondary dark:text-accent">Premium (SOL, optional)</span>
         <input
           type="number"
           name="premiumSol"
           step="0.01"
           min="0"
-          className="rounded border border-stroke-3 bg-background-4 px-3 py-2 text-secondary dark:border-stroke-6 dark:bg-background-9 dark:text-accent"
+          className="rounded-lg border border-stroke-3 bg-background-1 px-3 py-2.5 text-secondary placeholder:text-secondary/50 dark:border-stroke-6 dark:bg-background-9 dark:text-accent dark:placeholder:text-accent/50"
           placeholder="Auto"
         />
       </label>
-      <label className="flex flex-col gap-1">
-        <span className="text-tagline-1 font-medium text-secondary dark:text-accent">
+      <label className="flex flex-col gap-1.5">
+        <span className="text-tagline-1 font-semibold text-secondary dark:text-accent">
           Market cap at placement (mock, for resolution)
         </span>
         <input
@@ -71,7 +71,7 @@ export function RequestForm({
           name="marketCapAtPlacement"
           min="0"
           defaultValue={100000}
-          className="rounded border border-stroke-3 bg-background-4 px-3 py-2 text-secondary dark:border-stroke-6 dark:bg-background-9 dark:text-accent"
+          className="rounded-lg border border-stroke-3 bg-background-1 px-3 py-2.5 text-secondary dark:border-stroke-6 dark:bg-background-9 dark:text-accent"
         />
       </label>
       <input type="hidden" name="requester" value="web-user" />
