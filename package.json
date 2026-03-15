@@ -13,12 +13,12 @@
     "postinstall": "tsx folder-rename.ts --utb"
   },
   "dependencies": {
-    "@solana/wallet-adapter-base": "^0.9.23",
-    "@solana/wallet-adapter-react": "^0.15.35",
-    "@solana/wallet-adapter-react-ui": "^0.9.35",
-    "@solana/wallet-adapter-wallets": "^0.19.32",
-    "@solana/web3.js": "^1.95.3",
     "@gsap/react": "^2.1.2",
+    "@solana/wallet-adapter-base": "^0.9.27",
+    "@solana/wallet-adapter-react": "^0.15.39",
+    "@solana/wallet-adapter-react-ui": "^0.9.39",
+    "@solana/wallet-adapter-wallets": "^0.19.37",
+    "@solana/web3.js": "^1.98.4",
     "classnames": "^2.5.1",
     "gray-matter": "^4.0.3",
     "gsap": "^3.13.0",
@@ -53,8 +53,8 @@
     "prettier-plugin-tailwindcss": "^0.7.1",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "tsx": "^4.21.0"
+    "tsx": "^4.21.0",
+    "typescript": "^5"
   },
   "resolutions": {
     "@types/react": "19.2.2",
