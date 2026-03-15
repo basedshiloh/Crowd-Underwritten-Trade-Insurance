@@ -18,15 +18,9 @@ export default async function UnderwritePage() {
   const requests = listOpenRequests();
 
   return (
-    <main className="bg-background-3 dark:bg-background-7 min-h-screen">
-      <section className="container mx-auto px-4 pt-28 pb-16 md:pt-36 md:pb-24">
+    <main className="min-h-screen">
+      <section className="px-4 pt-28 pb-16 md:px-6 md:pt-36 md:pb-24">
         <div className="mx-auto max-w-3xl">
-          <Link
-            href="/"
-            className="text-tagline-2 mb-6 inline-block text-primary-500 hover:underline"
-          >
-            ← Back
-          </Link>
           <h1 className="text-heading-4 mb-4 font-semibold text-secondary dark:text-accent">
             Underwrite trades
           </h1>
