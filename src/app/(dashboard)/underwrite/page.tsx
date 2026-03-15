@@ -19,19 +19,19 @@ export default async function UnderwritePage() {
 
   return (
     <main className="min-h-screen">
-      <section className="px-4 pt-28 pb-16 md:px-6 md:pt-36 md:pb-24">
+      <section className="px-4 pt-24 pb-12 sm:px-6 sm:pt-28 sm:pb-16 md:pt-32 md:pb-24">
         <div className="mx-auto max-w-3xl">
-          <h1 className="text-heading-4 mb-4 font-semibold text-secondary dark:text-accent">
+          <h1 className="text-heading-5 mb-3 font-semibold text-secondary dark:text-accent sm:text-heading-4 sm:mb-4">
             Underwrite trades
           </h1>
-          <p className="text-tagline-1 mb-10 text-secondary/80 dark:text-accent/80">
+          <p className="text-tagline-2 mb-6 text-secondary/80 dark:text-accent/80 sm:text-tagline-1 sm:mb-10">
             Open coverage requests. Stake SOL to underwrite; you must hold at least the tier’s % of
             the governance token supply.
           </p>
 
           {requests.length === 0 ? (
-            <div className="rounded-xl border border-stroke-5 bg-background-4 p-8 text-center dark:border-stroke-6 dark:bg-background-9">
-              <p className="text-tagline-1 text-secondary/80 dark:text-accent/80">
+            <div className="rounded-xl border border-stroke-5 bg-background-4 p-6 text-center dark:border-stroke-6 dark:bg-background-9 sm:p-8">
+              <p className="text-tagline-2 text-secondary/80 dark:text-accent/80 sm:text-tagline-1">
                 No open requests. Create one from the{' '}
                 <Link href="/request" className="text-primary-500 underline hover:no-underline">
                   request
@@ -40,16 +40,16 @@ export default async function UnderwritePage() {
               </p>
             </div>
           ) : (
-            <ul className="flex flex-col gap-6">
+            <ul className="flex flex-col gap-4 sm:gap-6">
               {requests.map((req) => {
                 const totalSol = totalStakedSol(req.id);
                 const requiredHold = getRequiredHoldPercentForCoverage(req.coverageAmountSol);
                 return (
                   <li
                     key={req.id}
-                    className="rounded-xl border border-stroke-5 bg-background-4 p-6 dark:border-stroke-6 dark:bg-background-9"
+                    className="rounded-xl border border-stroke-5 bg-background-4 p-4 dark:border-stroke-6 dark:bg-background-9 sm:p-6"
                   >
-                    <div className="mb-4 grid gap-2 text-tagline-2 text-secondary dark:text-accent">
+                    <div className="mb-3 grid gap-1.5 text-tagline-2 text-secondary dark:text-accent sm:mb-4 sm:gap-2">
                       <p>
                         <strong>Token:</strong> {req.tokenMint} ·{' '}
                         <strong>Coverage:</strong> {req.coverageAmountSol} SOL ·{' '}

@@ -1,11 +1,6 @@
-import { DashboardSidebar } from '@/components/dashboard/DashboardSidebar';
+import { DashboardShell } from '@/components/dashboard/DashboardShell';
 import { ReactNode } from 'react';
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
-  return (
-    <div className="flex min-h-screen bg-background-3 dark:bg-background-7">
-      <DashboardSidebar />
-      <div className="min-w-0 flex-1">{children}</div>
-    </div>
-  );
+  return <DashboardShell>{children}</DashboardShell>;
 }
