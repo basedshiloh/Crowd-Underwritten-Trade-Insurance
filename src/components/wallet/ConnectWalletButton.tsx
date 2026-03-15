@@ -13,8 +13,9 @@ interface ConnectWalletButtonProps {
 export function ConnectWalletButton({ className, compact }: ConnectWalletButtonProps) {
   const { connected, publicKey } = useWallet();
 
-  const label = connected && publicKey
-    ? `${publicKey.slice(0, 4)}...${publicKey.slice(-4)}`
+  const address = publicKey?.toBase58() ?? '';
+  const label = connected && address
+    ? `${address.slice(0, 4)}...${address.slice(-4)}`
     : 'Connect Wallet';
 
   return (
