@@ -15,43 +15,43 @@ const servicesData: ServiceItem[] = [
   {
     id: 1,
     icon: 'ns-shape-47',
-    title: 'Smart Integration',
-    description: 'Seamlessly connect your gadgets with one hub, from voice assistants to home devices.',
+    title: 'Request coverage',
+    description: 'Request SOL coverage for a trade on any token. Set amount, duration, and premium; the crowd backs it.',
     delay: 0.4,
   },
   {
     id: 2,
     icon: 'ns-shape-12',
-    title: 'AI Automation',
-    description: 'Let artificial intelligence handle routine tasks and optimize your daily workflows automatically.',
+    title: 'Underwrite & earn',
+    description: 'Stake SOL to underwrite open requests. Earn premium when trades survive; capital is at risk if they rug.',
     delay: 0.5,
   },
   {
     id: 3,
     icon: 'ns-shape-8',
-    title: 'Real-time Monitoring',
-    description: 'Track your devices and get instant insights with comprehensive real-time monitoring.',
+    title: 'Token-gated access',
+    description: 'Hold a share of the governance token supply to participate. Higher tiers unlock larger coverage and stakes.',
     delay: 0.6,
   },
   {
     id: 4,
     icon: 'ns-shape-3',
-    title: 'Voice Control',
-    description: 'Control all your connected devices with simple voice commands and natural language.',
+    title: 'Market-cap resolution',
+    description: 'Clear rules: if market cap stays above a threshold at resolution, the trade survived; otherwise coverage pays out.',
     delay: 0.7,
   },
   {
     id: 5,
     icon: 'ns-shape-52',
-    title: 'Energy Management',
-    description: 'Optimize energy consumption across all devices with intelligent power management.',
+    title: 'Transparent tiers',
+    description: 'Tiered by coverage size—e.g. 1 SOL gets 0.1% supply requirement, 5 SOL gets 0.2%—so terms are predictable.',
     delay: 0.8,
   },
   {
     id: 6,
     icon: 'ns-shape-35',
-    title: 'Security & Privacy',
-    description: 'Advanced encryption and privacy controls to keep your smart home data secure.',
+    title: 'SOL-native',
+    description: 'All coverage and stakes in SOL. No separate stablecoin; simple, on-chain crowd underwriting for degen trades.',
     delay: 0.9,
   },
 ];
@@ -67,14 +67,14 @@ const Services = () => {
         <div className="main-container mb-13">
           <div className="mb-19 text-center lg:mx-auto lg:max-w-[730px]">
             <RevealAnimation delay={0.1}>
-              <span className="badge badge-white !text-secondary !text-tagline-2 mb-5 font-medium">services</span>
+              <span className="badge badge-white !text-secondary !text-tagline-2 mb-5 font-medium">how it works</span>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
-              <h2 className="text-accent mb-3">Our smart AI services</h2>
+              <h2 className="text-accent mb-3">Crowd-underwritten trade insurance</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="text-accent/60 lg:mx-auto lg:max-w-[420px]">
-                Everything you need to connect, control, and simplify life powered by intelligent AI.
+                Request SOL coverage for your trades, or stake SOL to underwrite others—all gated by governance token holding.
               </p>
             </RevealAnimation>
           </div>
@@ -96,11 +96,16 @@ const Services = () => {
           </div>
         </div>
         <RevealAnimation delay={1}>
-          <div className="mx-auto flex w-[90%] items-center justify-center md:w-auto">
+          <div className="mx-auto flex w-[90%] items-center justify-center gap-4 md:w-auto md:gap-6">
             <LinkButton
-              href="/services"
+              href="/request"
               btnClass="btn-xl-v2 btn-v2-white !border-0 group-hover/btn-v2:btn-secondary-v2">
-              See all services
+              Request coverage
+            </LinkButton>
+            <LinkButton
+              href="/underwrite"
+              btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2">
+              Underwrite trades
             </LinkButton>
           </div>
         </RevealAnimation>

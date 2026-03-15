@@ -2,7 +2,6 @@ import About from '@/components/home/About';
 import Clients from '@/components/home/Clients';
 import CTA from '@/components/home/CTA';
 import FAQ from '@/components/home/FAQ';
-import Gadgets from '@/components/home/Gadgets';
 import Hero from '@/components/home/Hero';
 import HowItWork from '@/components/home/HowItWork';
 import Pricing from '@/components/home/Pricing';
@@ -23,7 +22,6 @@ const page = () => {
       <Hero />
       <Clients />
       <WhatWeDo />
-      <Gadgets />
       <About />
       <Services />
       <HowItWork />
