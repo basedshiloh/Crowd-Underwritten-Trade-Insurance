@@ -144,10 +144,18 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
                 </ul>
               </nav>
               <div className="hidden items-center justify-center xl:flex">
-                <AppKitConnectButton />
+                <div className="group/btn-v2 mx-auto inline-block w-[85%] rounded-full transition-transform duration-500 ease-in-out md:mx-0 md:w-auto">
+                  <AppKitConnectButton
+                    className="!mx-auto !inline-flex !h-12 !w-full !cursor-pointer !items-center !justify-center !gap-1.5 !rounded-full !border-0 !text-center !font-medium !lowercase !text-nowrap !transition-all !duration-500 ease-in-out md:!mx-0 md:!h-auto md:!w-auto btn-xl-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2"
+                  />
+                </div>
               </div>
               <div className="flex items-center gap-2 xl:hidden">
-                <AppKitConnectButton />
+                <div className="group/btn-v2 inline-block w-auto rounded-full transition-transform duration-500 ease-in-out">
+                  <AppKitConnectButton
+                    className="!inline-flex !h-12 !min-w-0 !cursor-pointer !items-center !justify-center !gap-1.5 !rounded-full !border-0 !px-5 !font-medium !lowercase !text-nowrap !transition-all !duration-500 ease-in-out btn-xl-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2"
+                  />
+                </div>
                 <MobileMenuButton />
               </div>
             </div>
