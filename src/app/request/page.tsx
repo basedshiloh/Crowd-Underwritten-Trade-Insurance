@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 
 export default function RequestPage() {
   return (
-    <main className="bg-background-3 dark:bg-background-7">
-      <section className="container mx-auto px-4 py-16 md:py-24">
+    <main className="bg-background-3 dark:bg-background-7 min-h-screen">
+      <section className="container mx-auto px-4 pt-28 pb-16 md:pt-36 md:pb-24">
         <div className="mx-auto max-w-2xl">
           <h1 className="text-heading-4 mb-4 font-semibold text-secondary dark:text-accent">
             Request coverage
