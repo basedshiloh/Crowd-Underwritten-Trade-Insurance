@@ -21,28 +21,28 @@ const Hero = () => {
       <div className="main-container relative z-30">
         <div className="mb-16 text-center md:mb-24 lg:mb-40">
           <RevealAnimation delay={0.1}>
-            <h1 className="text-accent mb-3 font-medium">Smarter living starts here</h1>
+            <h1 className="text-accent mb-3 font-medium">Crowd-underwritten trade insurance</h1>
           </RevealAnimation>
           <RevealAnimation delay={0.2}>
             <p className="text-accent/60 mx-auto mb-7 max-w-[500px] md:mb-10 lg:mb-14">
-              Discover the next generation of AI-powered gadgets that make life faster, easier, and effortlessly
-              connected.
+              Request SOL coverage for risky trades. Others stake SOL to underwrite you—earn premium when the token
+              survives, or pay out from staked collateral if it rugs. Hold the governance token to participate.
             </p>
           </RevealAnimation>
           <ul className="flex flex-col items-center justify-center gap-x-4 gap-y-3 md:flex-row md:gap-y-0">
             <RevealAnimation delay={0.4} direction="left" offset={50} instant>
               <div>
                 <LinkButton
-                  href="services"
+                  href="/request"
                   btnClass="btn-xl-v2 !border-0 btn-secondary-v2 group-hover/btn-v2:btn-gray-v2">
-                  Explore products
+                  Request coverage
                 </LinkButton>
               </div>
             </RevealAnimation>
             <RevealAnimation delay={0.5} direction="left" offset={50} instant>
               <div>
-                <LinkButton href="/signup" btnClass="btn-xl-v2 !border-0 btn-gray-v2 group-hover/btn-v2:btn-primary-v2">
-                  Get started free
+                <LinkButton href="/underwrite" btnClass="btn-xl-v2 !border-0 btn-gray-v2 group-hover/btn-v2:btn-primary-v2">
+                  Underwrite trades
                 </LinkButton>
               </div>
             </RevealAnimation>

@@ -13,8 +13,8 @@ const WhatWeDo = () => {
             <h2
               ref={titleRef}
               className="split-text-team-title text-secondary font-inter-tight text-heading-5 sm:text-heading-4 md:text-heading-3 lg:text-heading-2 xl:text-heading-1 text-center font-light wrap-break-word 2xl:text-[88px] 2xl:leading-[120%]">
-              Our AI speaker gadget is designed to bring the future of smart home technology into your hands. Powered by
-              advanced artificial intelligence.
+              No central pool—traders request coverage in SOL, and the crowd stakes SOL to underwrite. Hold the
+              governance token to participate; earn premium when the token survives, or pay out if it rugs.
             </h2>
           </div>
         </div>

@@ -23,31 +23,31 @@ const CTA = () => {
             <div className="space-y-2">
               <RevealAnimation delay={0.1}>
                 <h2>
-                  Ready to experience <br className="hidden lg:block" />
-                  smarter living?
+                  Ready to request coverage <br className="hidden lg:block" />
+                  or underwrite trades?
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
                 <p>
-                  Join thousands of users already enjoying <br className="hidden lg:block" />
-                  effortless AI-powered control.
+                  Request SOL coverage for your next trade, or stake SOL to back others and earn premium when tokens
+                  survive.
                 </p>
               </RevealAnimation>
             </div>
             <ul className="flex w-full flex-col items-center justify-center gap-x-4 gap-y-3 md:w-auto md:flex-row md:gap-y-0">
               <RevealAnimation delay={0.4} direction="left" offset={50}>
                 <div className="w-[90%] md:w-auto">
-                  <LinkButton href="/login" btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2">
-                    Get started now
+                  <LinkButton href="/request" btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2">
+                    Request coverage
                   </LinkButton>
                 </div>
               </RevealAnimation>
               <RevealAnimation delay={0.5} direction="left" offset={50}>
                 <div className="w-[90%] md:w-auto">
                   <LinkButton
-                    href="/services"
+                    href="/underwrite"
                     btnClass="btn-xl-v2 btn-v2-white !border-0 group-hover/btn-v2:btn-secondary-v2">
-                    Explore products
+                    Underwrite trades
                   </LinkButton>
                 </div>
               </RevealAnimation>
