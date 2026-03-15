@@ -1,15 +1,27 @@
 {
   "name": "crowd-underwritten-trade-insurance",
   "version": "0.1.0",
-  "description": "Users underwrite trade insurance; INSURE token as risk collateral",
-  "type": "module",
+  "description": "Crowd-underwritten trade insurance with SOL stakes and tiered token-gated access.",
+  "private": true,
   "scripts": {
-    "build": "tsc",
-    "start": "node --experimental-strip-types agent/index.ts",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "demo": "tsc && node dist/agent/demo.js"
+  },
+  "dependencies": {
+    "next": "15.0.0-canary.22",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "typescript": "^5.3.0",
-    "tsx": "^4.7.0"
+    "tsx": "^4.7.0",
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^9.9.0",
+    "eslint-config-next": "15.0.0-canary.22"
   }
 }
