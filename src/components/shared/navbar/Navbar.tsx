@@ -1,6 +1,6 @@
 'use client';
 import RevealAnimation from '@/components/animation/RevealAnimation';
-import LinkButton from '@/components/ui/button/Button';
+import { ConnectWalletButton } from '@/components/wallet/ConnectWalletButton';
 import { MobileMenuProvider } from '@/context/MobileMenuContext';
 import { mobileMenuData } from '@/data/navbar-data';
 import { useNavbarScroll } from '@/hooks/useScrollHeader';
@@ -144,11 +144,12 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
                 </ul>
               </nav>
               <div className="hidden items-center justify-center xl:flex">
-                <LinkButton href="/signup" btnClass="btn-md-v2 btn-v2-white hover:btn-primary-v2">
-                  Get started
-                </LinkButton>
+                <ConnectWalletButton />
               </div>
-              <MobileMenuButton />
+              <div className="flex items-center gap-2 xl:hidden">
+                <ConnectWalletButton compact />
+                <MobileMenuButton />
+              </div>
             </div>
           </div>
         </RevealAnimation>
