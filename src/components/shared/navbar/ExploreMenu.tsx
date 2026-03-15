@@ -1,6 +1,5 @@
 'use client';
 import {
-  ExploreCompanyIcon,
   ExplorePricingAndAccountIcon,
   ExploreProductIcon,
   ExploreResourcesIcon,
@@ -28,19 +27,6 @@ type ExploreSection = {
 
 const exploreSections: ExploreSection[] = [
   {
-    title: 'Company',
-    items: [
-      { label: 'About', href: '/about' },
-      { label: 'Team', href: '/team' },
-    ],
-    cta: {
-      href: '/about',
-      icon: ExploreCompanyIcon,
-      title: 'Company',
-      description: 'Discover our mission',
-    },
-  },
-  {
     title: 'Product',
     items: [
       { label: 'Features', href: '/features' },
@@ -49,7 +35,7 @@ const exploreSections: ExploreSection[] = [
       { label: 'Press', href: '/press' },
     ],
     cta: {
-      href: '/services',
+      href: '/features',
       icon: ExploreProductIcon,
       title: 'Product',
       description: "Discover what's possible",

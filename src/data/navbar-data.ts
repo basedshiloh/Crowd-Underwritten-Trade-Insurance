@@ -11,21 +11,6 @@ export const mobileMenuData: MobileMenuGroup[] = [
     ],
   },
   {
-    id: 'company',
-    title: 'Company',
-    submenu: [
-      { id: 'about-us', label: 'About Us', href: './about' },
-      { id: 'services', label: 'Services', href: './services' },
-      { id: 'team', label: 'Our Team', href: './team' },
-      { id: 'our-manifesto', label: 'Our Manifesto', href: './our-manifesto' },
-      { id: 'why-choose-us', label: 'Why Choose Us', href: './why-choose-us' },
-      { id: 'customers', label: 'Customers', href: './customer' },
-      { id: 'use-cases', label: 'Use Cases', href: './use-case' },
-      { id: 'testimonials', label: 'Testimonials', href: './testimonial' },
-    ],
-  },
-
-  {
     id: 'platform',
     title: 'Platform',
     submenu: [
@@ -70,9 +55,5 @@ export const footerData: FooterOneData[] = [
       { label: 'Request Coverage', href: '/request' },
       { label: 'Underwrite Trades', href: '/underwrite' },
     ],
-  },
-  {
-    title: 'Company',
-    links: [{ label: 'About Us', href: '/about' }],
   },
 ];

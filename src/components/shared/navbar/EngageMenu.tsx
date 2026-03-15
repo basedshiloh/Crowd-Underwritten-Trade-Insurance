@@ -1,5 +1,5 @@
 'use client';
-import { CustomersIcon, ServiceIcon, SupportIcon, TestimonialIcon } from '@/icons/menu-icon';
+import { SupportIcon, TestimonialIcon } from '@/icons/menu-icon';
 import { cn } from '@/utils/cn';
 import Link from 'next/link';
 import type { ComponentType } from 'react';
@@ -20,22 +20,10 @@ const engageLinks: EngageLink[] = [
     icon: SupportIcon,
   },
   {
-    title: 'Services',
-    description: 'Discover what we offer',
-    href: '/services',
-    icon: ServiceIcon,
-  },
-  {
     title: 'Testimonials',
     description: 'See client feedback',
     href: '/testimonial',
     icon: TestimonialIcon,
-  },
-  {
-    title: 'Customers',
-    description: 'See customer success',
-    href: '/customer',
-    icon: CustomersIcon,
   },
 ];
 
