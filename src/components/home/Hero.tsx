@@ -1,4 +1,4 @@
-import HeroBanner from '@public/images/ns-img-330.png';
+import HeroBanner from '@public/images/graphic-1.png';
 import GradientOne from '@public/images/ns-img-540.png';
 import GradientTwo from '@public/images/ns-img-541.png';
 import Image from 'next/image';
