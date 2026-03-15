@@ -8,7 +8,7 @@
 
 import { parseCoverageIntent, buildCoverageRequest } from "./parse-request.js";
 import { postRequest, listOpenRequests } from "./post-request.js";
-import type { CoverageRequest } from "../types/coverage.js";
+import { getRequiredHoldPercentForCoverage, type CoverageRequest } from "../types/coverage.js";
 
 export { parseCoverageIntent, buildCoverageRequest, postRequest, listOpenRequests };
 export type { CoverageRequest };
@@ -20,17 +20,19 @@ function nextId(): string {
 
 /**
  * Handle user message: try to parse as coverage request and post it.
+ * @param marketCapAtPlacement - Token market cap when insurance is placed (set when coverage goes active, or from oracle at creation).
  */
 export function handleUserMessage(
   text: string,
-  requester: string
+  requester: string,
+  marketCapAtPlacement: number = 0
 ): { success: true; request: CoverageRequest } | { success: false; reason: string } {
   const intent = parseCoverageIntent(text);
   if (!intent) {
     return { success: false, reason: "Could not parse coverage request. Try: 'Insure 3 SOL on TOKENX'" };
   }
 
-  const request = buildCoverageRequest(intent, requester, nextId());
+  const request = buildCoverageRequest(intent, requester, nextId(), marketCapAtPlacement);
   const result = postRequest(request);
 
   if (!result.ok) {
@@ -41,15 +43,18 @@ export function handleUserMessage(
 
 /**
  * Format a posted request for display to underwriters.
+ * To participate you must hold ≥ tier % of governance token supply; underwriting is in SOL.
  */
 export function formatRequestForUnderwriters(req: CoverageRequest): string {
+  const requiredHoldPercent = getRequiredHoldPercentForCoverage(req.coverageAmountSol);
   return [
     "📋 **New coverage request**",
     `Coverage: ${req.coverageAmountSol} SOL`,
     `Token: ${req.tokenMint}`,
     `Duration: ${req.durationHours} hours`,
     `Premium: ${req.premiumSol} SOL`,
+    `Survival: market cap must stay ≥ ${req.survivalThresholdPercent}% of placement (${req.marketCapAtPlacement})`,
     `Request ID: \`${req.id}\``,
-    "Stake INSURE tokens to underwrite this request.",
+    `To insure/underwrite: hold ≥ ${requiredHoldPercent}% of token supply. Stake SOL to underwrite.`,
   ].join("\n");
 }

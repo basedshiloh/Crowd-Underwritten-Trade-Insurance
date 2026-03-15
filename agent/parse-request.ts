@@ -13,6 +13,8 @@ export interface ParsedIntent {
   tokenMintOrSymbol: string;
   durationHours?: number;
   premiumSol?: number;
+  /** Optional: survival threshold % of placement market cap (default 80) */
+  survivalThresholdPercent?: number;
 }
 
 /**
@@ -42,25 +44,38 @@ export function parseCoverageIntent(text: string): ParsedIntent | null {
   const premiumMatch = normalized.match(/premium[:\s]+(\d+(?:\.\d+)?)\s*sol/);
   if (premiumMatch) premiumSol = parseFloat(premiumMatch[1]);
 
+  let survivalThresholdPercent: number | undefined;
+  const thresholdMatch = normalized.match(/(?:above|min(?:imum)?)\s*(\d+)\s*%?\s*(?:market\s*cap|mc)/i)
+    || normalized.match(/(\d+)\s*%\s*surviv(e|al)/i);
+  if (thresholdMatch) survivalThresholdPercent = parseInt(thresholdMatch[1], 10);
+
   return {
     coverageAmountSol,
     tokenMintOrSymbol,
     durationHours,
     premiumSol,
+    survivalThresholdPercent,
   };
 }
 
+/** Default: token must stay above 80% of placement market cap to count as "survived" */
+export const DEFAULT_SURVIVAL_THRESHOLD_PERCENT = 80;
+
 /**
  * Build a CoverageRequest from parsed intent and IDs.
+ * @param marketCapAtPlacement - Token market cap when insurance is placed (e.g. from oracle); used for resolution.
  */
 export function buildCoverageRequest(
   intent: ParsedIntent,
   requester: string,
-  requestId: string
+  requestId: string,
+  marketCapAtPlacement: number,
+  survivalThresholdPercent: number = DEFAULT_SURVIVAL_THRESHOLD_PERCENT
 ): CoverageRequest {
   const now = new Date();
   const durationMs = (intent.durationHours ?? DEFAULT_DURATION_HOURS) * 60 * 60 * 1000;
   const expiresAt = new Date(now.getTime() + durationMs);
+  const threshold = intent.survivalThresholdPercent ?? survivalThresholdPercent;
 
   return {
     id: requestId,
@@ -72,5 +87,7 @@ export function buildCoverageRequest(
     expiresAt: expiresAt.toISOString(),
     createdAt: now.toISOString(),
     requester,
+    marketCapAtPlacement,
+    survivalThresholdPercent: threshold,
   };
 }

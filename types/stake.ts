@@ -13,7 +13,7 @@ export function addStake(stake: UnderwriterStake): void {
   const list = stakesByRequest.get(stake.requestId) ?? [];
   const existing = list.find((s) => s.underwriter === stake.underwriter);
   if (existing) {
-    existing.amountStaked += stake.amountStaked;
+    existing.amountStakedSol += stake.amountStakedSol;
   } else {
     list.push({ ...stake, id: stake.id || `stake_${Date.now()}_${stake.underwriter.slice(0, 8)}` });
   }
@@ -24,6 +24,7 @@ export function getStakes(requestId: string): UnderwriterStake[] {
   return stakesByRequest.get(requestId) ?? [];
 }
 
-export function totalStaked(requestId: string): number {
-  return getStakes(requestId).reduce((sum, s) => sum + s.amountStaked, 0);
+/** Total SOL staked by underwriters for this request */
+export function totalStakedSol(requestId: string): number {
+  return getStakes(requestId).reduce((sum, s) => sum + s.amountStakedSol, 0);
 }
