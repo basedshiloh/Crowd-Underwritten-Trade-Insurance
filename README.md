@@ -385,7 +385,7 @@ The project can be deployed to:
 
 1. **Build the project**: Run `npm run build` locally to test
 2. **Choose platform**: Select your preferred hosting provider
-3. **Configure environment**: Set up any required environment variables
+3. **Configure environment**: Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_PROJECT_ID` (get one at [Reown Dashboard](https://dashboard.reown.com)) for wallet connection via [Reown AppKit](https://docs.reown.com/appkit/overview) (Solana only).
 4. **Deploy**: Follow platform-specific deployment instructions
 
 ## 🔍 Browser Support

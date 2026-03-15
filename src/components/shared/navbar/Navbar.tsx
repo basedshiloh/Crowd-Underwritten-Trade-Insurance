@@ -1,6 +1,6 @@
 'use client';
 import RevealAnimation from '@/components/animation/RevealAnimation';
-import { ConnectWalletButton } from '@/components/wallet/ConnectWalletButton';
+import { AppKitConnectButton } from '@reown/appkit/react';
 import { MobileMenuProvider } from '@/context/MobileMenuContext';
 import { mobileMenuData } from '@/data/navbar-data';
 import { useNavbarScroll } from '@/hooks/useScrollHeader';
@@ -144,10 +144,10 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
                 </ul>
               </nav>
               <div className="hidden items-center justify-center xl:flex">
-                <ConnectWalletButton />
+                <AppKitConnectButton />
               </div>
               <div className="flex items-center gap-2 xl:hidden">
-                <ConnectWalletButton compact />
+                <AppKitConnectButton />
                 <MobileMenuButton />
               </div>
             </div>

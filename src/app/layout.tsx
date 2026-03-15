@@ -1,4 +1,4 @@
-import { WalletProvider } from '@/components/wallet/WalletProvider';
+import { AppKitProvider } from '@/components/wallet/AppKitProvider';
 import HeaderWrapper from '@/components/shared/HeaderWrapper';
 import SmoothScrollProvider from '@/components/shared/SmoothScroll';
 import Footer from '@/components/shared/footer/Footer';
@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${interTight.variable} antialiased`}>
         <AppContextProvider>
-          <WalletProvider>
+          <AppKitProvider>
             <Suspense>
               <SmoothScrollProvider>
                 <HeaderWrapper />
@@ -30,7 +30,7 @@ export default function RootLayout({
                 <Footer />
               </SmoothScrollProvider>
             </Suspense>
-          </WalletProvider>
+          </AppKitProvider>
         </AppContextProvider>
       </body>
     </html>
