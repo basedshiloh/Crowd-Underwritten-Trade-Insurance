@@ -32,8 +32,6 @@ const exploreSections: ExploreSection[] = [
     items: [
       { label: 'About', href: '/about' },
       { label: 'Team', href: '/team' },
-      { label: 'Careers', href: '/career' },
-      { label: 'Case Studies', href: '/case-study' },
     ],
     cta: {
       href: '/about',
@@ -59,12 +57,7 @@ const exploreSections: ExploreSection[] = [
   },
   {
     title: 'Resources',
-    items: [
-      { label: 'Blog', href: '/blog' },
-      { label: 'Docs', href: '/documentation' },
-      { label: 'FAQ', href: '/faq' },
-      { label: 'Tutorials', href: '/tutorial' },
-    ],
+    items: [{ label: 'Blog', href: '/blog' }],
     cta: {
       href: '/blog',
       icon: ExploreResourcesIcon,

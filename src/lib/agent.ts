@@ -1,4 +1,5 @@
 import type { CoverageRequest, UnderwriterStake } from '@/lib/coverage';
+import { resolveByMarketCap } from '@/lib/coverage';
 
 const DEFAULT_SURVIVAL_THRESHOLD_PERCENT = 80;
 
@@ -49,6 +50,47 @@ export function createCoverageRequest(
 
 export function listOpenRequests(): CoverageRequest[] {
   return Array.from(requestsStore.values()).filter((r) => r.status === 'open');
+}
+
+export function listAllRequests(): CoverageRequest[] {
+  return Array.from(requestsStore.values()).sort(
+    (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+  );
+}
+
+export function getRequestsByRequester(requester: string): CoverageRequest[] {
+  return listAllRequests().filter((r) => r.requester === requester);
+}
+
+export function getRequestsUnderwrittenBy(underwriter: string): CoverageRequest[] {
+  const requestIds = new Set<string>();
+  for (const [reqId, stakes] of stakesStore) {
+    if (stakes.some((s) => s.underwriter === underwriter)) requestIds.add(reqId);
+  }
+  return listAllRequests().filter((r) => requestIds.has(r.id));
+}
+
+export function getStakeForRequest(underwriter: string, requestId: string): UnderwriterStake | undefined {
+  return getStakes(requestId).find((s) => s.underwriter === underwriter);
+}
+
+export function resolveRequest(
+  requestId: string,
+  currentMarketCap: number
+): { ok: true; outcome: 'survived' | 'rugged' } | { ok: false; error: string } {
+  const request = requestsStore.get(requestId);
+  if (!request) return { ok: false, error: 'Request not found' };
+  if (request.status === 'resolved') return { ok: false, error: 'Already resolved' };
+  const outcome = resolveByMarketCap(
+    request.marketCapAtPlacement,
+    currentMarketCap,
+    request.survivalThresholdPercent
+  );
+  const now = new Date().toISOString();
+  request.status = 'resolved';
+  request.outcome = outcome;
+  request.resolvedAt = now;
+  return { ok: true, outcome };
 }
 
 export function getRequest(id: string): CoverageRequest | undefined {

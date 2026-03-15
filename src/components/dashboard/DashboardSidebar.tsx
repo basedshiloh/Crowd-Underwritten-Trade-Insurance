@@ -7,6 +7,7 @@ import { cn } from '@/utils/cn';
 
 const navItems = [
   { href: '/', label: 'Home' },
+  { href: '/trades', label: 'My trades' },
   { href: '/request', label: 'Request coverage' },
   { href: '/underwrite', label: 'Underwrite trades' },
 ];

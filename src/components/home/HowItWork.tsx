@@ -10,11 +10,11 @@ const HowItWork = () => {
             <span className="badge badge-gray-light-v2 mb-4">How It Works</span>
           </RevealAnimation>
           <RevealAnimation delay={0.2}>
-            <h2 className="mb-3">Your AI journey in 3 steps</h2>
+            <h2 className="mb-3">How it works in 3 steps</h2>
           </RevealAnimation>
           <RevealAnimation delay={0.3}>
-            <p className="mx-auto max-w-[350px]">
-              From setup to automation, getting started with your AI gadget is effortless.
+            <p className="mx-auto max-w-[420px]">
+              Request SOL coverage for a trade, get backed by the crowd, and resolve at expiry—simple and token-gated.
             </p>
           </RevealAnimation>
         </div>
@@ -26,8 +26,8 @@ const HowItWork = () => {
             <div className="flex flex-col items-center justify-center space-y-6 px-5 py-10 text-center">
               <div className="border-background-12 text-secondary rounded-[60px] border-8 bg-white px-9 py-2.5">1</div>
               <div className="space-y-1">
-                <h5>Connect your device</h5>
-                <p className="text-tagline-1">Unbox and link your AI gadget to the NextSaaS app in just a few taps.</p>
+                <h5>Request coverage</h5>
+                <p className="text-tagline-1">Create a coverage request: token, SOL amount, duration, and premium. You must hold the required % of the governance token.</p>
               </div>
             </div>
           </RevealAnimation>
@@ -35,9 +35,9 @@ const HowItWork = () => {
             <div className="flex flex-col items-center justify-center space-y-6 px-5 py-10 text-center">
               <div className="border-background-12 text-secondary rounded-[60px] border-8 bg-white px-9 py-2.5">2</div>
               <div className="space-y-1">
-                <h5>Customize &amp; sync</h5>
+                <h5>Underwriters stake</h5>
                 <p className="text-tagline-1">
-                  Set preferences, link accounts, and let the system learn your lifestyle.
+                  Others with enough token holding stake SOL to back your request. When the pool is filled, coverage is live.
                 </p>
               </div>
             </div>
@@ -46,17 +46,20 @@ const HowItWork = () => {
             <div className="flex flex-col items-center justify-center space-y-6 px-5 py-10 text-center">
               <div className="border-background-12 text-secondary rounded-[60px] border-8 bg-white px-9 py-2.5">3</div>
               <div className="space-y-1">
-                <h5>Automate &amp; control</h5>
-                <p className="text-tagline-1">Enjoy real-time insights, hands-free control, and smart automation.</p>
+                <h5>Resolve &amp; payout</h5>
+                <p className="text-tagline-1">At expiry, market cap vs. threshold decides: survived → underwriters earn premium; rug → coverage pays out from staked SOL.</p>
               </div>
             </div>
           </RevealAnimation>
         </div>
         {/* btn  */}
         <RevealAnimation delay={0.7}>
-          <div className="mt-14 text-center">
-            <LinkButton href="/process" btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2">
-              See all process
+          <div className="mt-14 flex flex-wrap items-center justify-center gap-4 text-center">
+            <LinkButton href="/request" btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2">
+              Request coverage
+            </LinkButton>
+            <LinkButton href="/underwrite" btnClass="btn-xl-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2">
+              Underwrite trades
             </LinkButton>
           </div>
         </RevealAnimation>

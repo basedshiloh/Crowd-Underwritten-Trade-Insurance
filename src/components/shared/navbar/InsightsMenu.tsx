@@ -1,12 +1,5 @@
 'use client';
-import {
-  AffiliateIcon,
-  AffiliatePolicyIcon,
-  AnalyticsIcon,
-  ChangeLogIcon,
-  GlossaryIcon,
-  WhitePaperIcon,
-} from '@/icons/menu-icon';
+import { AnalyticsIcon, ChangeLogIcon, GlossaryIcon, WhitePaperIcon } from '@/icons/menu-icon';
 import { cn } from '@/utils/cn';
 import Link from 'next/link';
 import type { ComponentType } from 'react';
@@ -20,18 +13,6 @@ type InsightsLink = {
 };
 
 const insightLinks: InsightsLink[] = [
-  {
-    title: 'Affiliate',
-    description: 'Partner with us',
-    href: '/affiliates',
-    icon: AffiliateIcon,
-  },
-  {
-    title: 'Affiliate Policy',
-    description: 'Check affiliate rules',
-    href: '/affiliate-policy',
-    icon: AffiliatePolicyIcon,
-  },
   {
     title: 'Analytics',
     description: 'Track performance metrics',

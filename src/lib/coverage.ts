@@ -18,6 +18,9 @@ export interface CoverageRequest {
   requester: string;
   marketCapAtPlacement: number;
   survivalThresholdPercent: number;
+  /** Set when status is 'resolved' */
+  outcome?: Outcome;
+  resolvedAt?: string;
 }
 
 export interface UnderwriterStake {
