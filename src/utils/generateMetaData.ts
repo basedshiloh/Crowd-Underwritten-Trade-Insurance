@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 
-export const DEFAULT_URL = 'https://crowd-underwritten-trade-insurance.vercel.app/';
-export const DEFAULT_TITLE = 'Crowd-Underwritten Trade Insurance';
+export const DEFAULT_URL = 'https://insure.trade/';
+export const DEFAULT_TITLE = 'Insure – Crowd-Underwritten Trade Insurance for Degens';
 export const DEFAULT_DESCRIPTION =
-  'SOL-based, token-gated crowd underwriting for degen trades. Request coverage or stake SOL to underwrite; hold the governance token to participate.';
-export const DEFAULT_IMAGE_URL = 'https://images.prismic.io/staticmania/aPD-K55xUNkB2D2X_og-image.jpg';
+  'Insure is a SOL-based, crowd-underwritten trade insurance protocol for degens. Request coverage on high-conviction trades or stake SOL to underwrite and earn yield, governed by token-gated collective intelligence.';
+export const DEFAULT_IMAGE_URL = '/images/metatags.png';
 
 const defaultMetadata: Metadata = {
   metadataBase: new URL(DEFAULT_URL),
@@ -12,7 +12,7 @@ const defaultMetadata: Metadata = {
   description: DEFAULT_DESCRIPTION,
   openGraph: {
     type: 'website',
-    siteName: 'Crowd-Underwritten Trade Insurance',
+    siteName: 'Insure',
     url: DEFAULT_URL,
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
