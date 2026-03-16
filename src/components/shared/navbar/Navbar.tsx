@@ -1,6 +1,6 @@
 'use client';
 import RevealAnimation from '@/components/animation/RevealAnimation';
-import { AppKitConnectButton } from '@reown/appkit/react';
+import { ConnectWalletButton } from '@/components/wallet/ConnectWalletButton';
 import { MobileMenuProvider } from '@/context/MobileMenuContext';
 import { mobileMenuData } from '@/data/navbar-data';
 import { useNavbarScroll } from '@/hooks/useScrollHeader';
@@ -101,10 +101,10 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
                 </ul>
               </nav>
               <div className="hidden items-center justify-center gap-3 xl:flex">
-                <AppKitConnectButton className="!inline-flex !h-12 !min-w-0 !cursor-pointer !items-center !justify-center !gap-1.5 !rounded-md !border-0 !px-5 !font-medium !lowercase !text-nowrap !transition-all !duration-500 ease-in-out btn-xl-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2" />
+                <ConnectWalletButton className="!inline-flex !h-12 !min-w-0 !cursor-pointer !items-center !justify-center !gap-1.5 !rounded-md !border-0 !px-5 !font-medium !lowercase !text-nowrap !transition-all !duration-500 ease-in-out btn-xl-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2" />
               </div>
               <div className="flex items-center gap-2 xl:hidden">
-                <AppKitConnectButton className="!inline-flex !h-12 !min-w-0 !cursor-pointer !items-center !justify-center !gap-1.5 !rounded-md !border-0 !px-5 !font-medium !lowercase !text-nowrap !transition-all !duration-500 ease-in-out btn-xl-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2" />
+                <ConnectWalletButton className="!inline-flex !h-12 !min-w-0 !cursor-pointer !items-center !justify-center !gap-1.5 !rounded-md !border-0 !px-5 !font-medium !lowercase !text-nowrap !transition-all !duration-500 ease-in-out btn-xl-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2" />
                 <MobileMenuButton />
               </div>
             </div>
