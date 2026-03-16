@@ -2,7 +2,7 @@
 'use client';
 import { useMobileMenuContext } from '@/context/MobileMenuContext';
 import { cn } from '@/utils/cn';
-import logoIcon from '@public/images/shared/insurance-logogram.svg';
+import logoIcon from '@public/images/shared/insure-logogram-black.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import MenuCloseButton from './MenuCloseButton';

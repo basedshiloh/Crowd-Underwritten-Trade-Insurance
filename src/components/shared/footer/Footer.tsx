@@ -2,8 +2,7 @@ import RevealAnimation from '@/components/animation/RevealAnimation';
 import { footerLinks } from '@/data/footer-data';
 import { cn } from '@/utils/cn';
 import bgGradientImg from '@public/images/ns-img-524.png';
-import DarkLogo from '@public/images/shared/logo-dark.svg';
-import LightLogo from '@public/images/shared/logo.svg';
+import InsureLogogram from '@public/images/shared/insure-logogram-black.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import FooterDivider from './FooterDivider';
@@ -26,8 +25,7 @@ const Footer = () => {
             <RevealAnimation delay={0.3}>
               <div className="xl:max-w-[306px]">
                 <figure>
-                  <Image src={LightLogo} className="dark:hidden" alt="NextSass" />
-                  <Image src={DarkLogo} className="hidden dark:block" alt="NextSass" />
+                  <Image src={InsureLogogram} alt="Insure" />
                 </figure>
                 <p className="text-secondary dark:text-accent mt-4 mb-7">
                   Powering crypto traders with intelligent risk tools and decentralized underwriting.
