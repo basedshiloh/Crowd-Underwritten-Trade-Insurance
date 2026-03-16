@@ -25,6 +25,12 @@ if (projectId) {
       defaultNetwork: solana,
       metadata,
       projectId,
+      // Theming per https://docs.reown.com/appkit/nuxt/core/theming
+      themeVariables: {
+        // Use your brand colors instead of AppKit default blue
+        '--apkt-accent': '#ffffff', // primary accent (buttons, etc.) – white to match navbar button
+        '--apkt-font-family': 'Satoshi, system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
+      },
       features: {
         analytics: true,
       },
