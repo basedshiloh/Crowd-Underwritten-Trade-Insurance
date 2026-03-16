@@ -13,9 +13,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import MobileMenu from '../mobile-menu/MobileMenu';
-import EngageMenu from './EngageMenu';
 import ExploreMenu from './ExploreMenu';
-import InsightsMenu from './InsightsMenu';
 import MobileMenuButton from './MobileMenuButton';
 
 const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
@@ -81,51 +79,12 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
                     </Link>
                     <ExploreMenu menuDropdownId={menuDropdownId} setMenuDropdownId={setMenuDropdownId} />
                   </li>
-                  <li
-                    onMouseEnter={() => handleMenuHover('engage-mega-menu')}
-                    data-menu="engage-mega-menu"
-                    className="group/nav-item relative cursor-pointer py-2.5">
+                  <li className="group/nav-item relative cursor-pointer py-2.5">
                     <Link
-                      href="#"
-                      onClick={(event) => event.preventDefault()}
+                      href="/changelog"
                       className="text-tagline-1 text-accent hover:border-stroke-8 flex items-center gap-1 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200 hover:text-white">
-                      <span>Engage</span>
-                      <span className="block origin-center translate-y-px transition-all duration-300 group-hover/nav-item:rotate-180">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="1.5"
-                          stroke="currentColor"
-                          className="size-4">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                        </svg>
-                      </span>
+                      <span>Changelog</span>
                     </Link>
-                    <EngageMenu menuDropdownId={menuDropdownId} setMenuDropdownId={setMenuDropdownId} />
-                  </li>
-                  <li
-                    onMouseEnter={() => handleMenuHover('insights-mega-menu')}
-                    data-menu="insights-mega-menu"
-                    className="group/nav-item relative cursor-pointer py-2.5">
-                    <Link
-                      href="#"
-                      onClick={(event) => event.preventDefault()}
-                      className="text-tagline-1 text-accent hover:border-stroke-8 flex items-center gap-1 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200 hover:text-white">
-                      <span>Insights</span>
-                      <span className="block origin-center translate-y-px transition-all duration-300 group-hover/nav-item:rotate-180">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="1.5"
-                          stroke="currentColor"
-                          className="size-4">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                        </svg>
-                      </span>
-                    </Link>
-                    <InsightsMenu menuDropdownId={menuDropdownId} setMenuDropdownId={setMenuDropdownId} />
                   </li>
                   <li className="py-2.5">
                     <Link

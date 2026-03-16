@@ -28,12 +28,15 @@ type ExploreSection = {
 const exploreSections: ExploreSection[] = [
   {
     title: 'Product',
-    items: [{ label: 'Press', href: '/press' }],
+    items: [
+      { label: 'Request Coverage', href: '/request' },
+      { label: 'Underwrite Trades', href: '/underwrite' },
+    ],
     cta: {
-      href: '/press',
+      href: '/request',
       icon: ExploreProductIcon,
-      title: 'Product',
-      description: "Discover what's possible",
+      title: 'Insurance',
+      description: 'Request coverage or underwrite trades',
     },
   },
   {
