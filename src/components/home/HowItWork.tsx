@@ -18,9 +18,9 @@ const HowItWork = () => {
             </p>
           </RevealAnimation>
         </div>
-        <div className="relative grid grid-cols-1 items-start gap-y-6 sm:grid-cols-3 sm:gap-x-5 md:gap-x-8 xl:items-center">
+        <div className="relative grid grid-cols-1 items-start gap-y-6 lg:grid-cols-3 lg:gap-x-5 xl:gap-x-8 xl:items-center">
           <RevealAnimation delay={0.6} direction="left">
-            <div className="absolute top-[22%] left-[17%] z-0 hidden h-[1px] w-[calc(100%-35%)] bg-[repeating-linear-gradient(to_right,_rgba(0,0,0,0.2)_0_4px,_transparent_4px_8px)] min-[860px]:top-[27.5%] sm:block" />
+            <div className="absolute top-[22%] left-[17%] z-0 hidden h-[1px] w-[calc(100%-35%)] bg-[repeating-linear-gradient(to_right,_rgba(0,0,0,0.2)_0_4px,_transparent_4px_8px)] min-[860px]:top-[27.5%] lg:block" />
           </RevealAnimation>
           <RevealAnimation delay={0.4} direction="left">
             <div className="flex flex-col items-center justify-center space-y-6 px-5 py-10 text-center">
