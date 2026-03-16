@@ -19,14 +19,14 @@ export function ConnectWalletButton({ className }: { className?: string }) {
     modal?.open();
   };
 
-  const label = isConnected && address ? truncateAddress(address) : 'Connect wallet';
+  const label = isConnected && address ? truncateAddress(address) : 'Connect Wallet';
 
   return (
     <button
       type="button"
       onClick={handleClick}
       className={cn(buttonClass, className)}
-      aria-label={isConnected ? 'View account' : 'Connect wallet'}>
+      aria-label={isConnected ? 'View account' : 'Connect Wallet'}>
       {label}
     </button>
   );
