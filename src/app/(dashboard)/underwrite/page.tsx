@@ -6,7 +6,6 @@ import { UnderwriteForm } from './underwrite-form';
 import { ResolutionDemo } from './resolution-demo';
 import { defaultMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
-import { DashboardNav } from '@/components/dashboard/DashboardNav';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
@@ -21,18 +20,10 @@ export default async function UnderwritePage() {
   return (
     <main className="min-h-screen">
       <section
-        className="flex px-4 pt-24 pb-12 sm:px-6 sm:pt-28 sm:pb-16 md:pt-32 md:pb-24"
+        className="px-4 pt-24 pb-12 sm:px-6 sm:pt-28 sm:pb-16 md:pt-32 md:pb-24"
         aria-labelledby="underwrite-heading"
       >
-        <aside className="w-56 max-w-56 flex-shrink-0 border-r border-stroke-5 bg-background-4 pr-4 dark:border-stroke-6 dark:bg-background-8">
-          <div className="sticky top-24">
-            <h2 id="underwrite-nav-heading" className="text-sm font-semibold uppercase tracking-wide text-secondary/70 dark:text-accent/70 mb-3">
-              Dashboard
-            </h2>
-            <DashboardNav />
-          </div>
-        </aside>
-        <div className="min-w-0 flex-1 pl-8">
+        <div className="mx-auto max-w-3xl">
           <h1 id="underwrite-heading" className="text-heading-5 mb-3 font-semibold text-secondary dark:text-accent sm:text-heading-4 sm:mb-4">
             Underwrite trades
           </h1>
