@@ -45,7 +45,14 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
                 <Link href="/">
                   <span className="sr-only">Home</span>
                   <figure className="hidden lg:block lg:max-w-[198px]">
-                    <Image src={mainLogo} alt="NextSaaS" className="h-[45px] w-auto dark:invert" priority />
+                    <Image
+                      src={mainLogo}
+                      alt="Insure Agent"
+                      width={168}
+                      height={45}
+                      className="h-[45px] w-[168px] dark:invert"
+                      priority
+                    />
                   </figure>
                   <figure className="block max-w-[44px] lg:hidden">
                     <Image src={mobileLogo} alt="Insure" className="block w-full" priority />
