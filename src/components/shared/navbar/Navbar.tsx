@@ -45,7 +45,7 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
                 <Link href="/">
                   <span className="sr-only">Home</span>
                   <figure className="hidden lg:block lg:max-w-[198px]">
-                    <Image src={mainLogo} alt="NextSaaS" className="dark:invert" priority />
+                    <Image src={mainLogo} alt="NextSaaS" className="h-[45px] w-auto dark:invert" priority />
                   </figure>
                   <figure className="block max-w-[44px] lg:hidden">
                     <Image src={mobileLogo} alt="Insure" className="block w-full" priority />
@@ -94,15 +94,10 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
                 </ul>
               </nav>
               <div className="hidden items-center justify-center gap-3 xl:flex">
-                <Link
-                  href="https://insure-agent.gitbook.io/insure-agent-docs/"
-                  className="btn-v2-white !inline-flex !h-12 !min-w-0 !cursor-pointer !items-center !justify-center !gap-1.5 !rounded-full !border-0 !px-5 !font-medium !text-nowrap !transition-all !duration-500 ease-in-out">
-                  Docs
-                </Link>
-                <AppKitConnectButton className="!inline-flex !h-12 !min-w-0 !cursor-pointer !items-center !justify-center !gap-1.5 !rounded-full !border-0 !px-5 !font-medium !lowercase !text-nowrap !transition-all !duration-500 ease-in-out btn-xl-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2" />
+                <AppKitConnectButton className="!inline-flex !h-12 !min-w-0 !cursor-pointer !items-center !justify-center !gap-1.5 !rounded-md !border-0 !px-5 !font-medium !lowercase !text-nowrap !transition-all !duration-500 ease-in-out btn-xl-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2" />
               </div>
               <div className="flex items-center gap-2 xl:hidden">
-                <AppKitConnectButton className="!inline-flex !h-12 !min-w-0 !cursor-pointer !items-center !justify-center !gap-1.5 !rounded-full !border-0 !px-5 !font-medium !lowercase !text-nowrap !transition-all !duration-500 ease-in-out btn-xl-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2" />
+                <AppKitConnectButton className="!inline-flex !h-12 !min-w-0 !cursor-pointer !items-center !justify-center !gap-1.5 !rounded-md !border-0 !px-5 !font-medium !lowercase !text-nowrap !transition-all !duration-500 ease-in-out btn-xl-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2" />
                 <MobileMenuButton />
               </div>
             </div>
