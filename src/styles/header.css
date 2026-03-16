@@ -7,10 +7,11 @@
   @apply transition-all duration-200 ease-in-out;
 }
 
-/* Override Reown AppKit primary button inside our themed button wrapper */
-.group\\/btn-v2 button[data-variant='primary'] {
-  background-color: #ffffff !important;
-  color: var(--color-secondary) !important;
-  border-color: var(--color-stroke-3) !important;
-  border-width: 1px !important;
+/* Override Reown AppKit primary connect button to match theme */
+appkit-connect-button[data-variant='primary'] {
+  @apply inline-flex h-12 min-w-0 cursor-pointer items-center justify-center gap-1.5 rounded-full border border-stroke-3 px-5 font-medium lowercase text-nowrap transition-all duration-500 ease-in-out bg-white text-secondary;
+}
+
+appkit-connect-button[data-variant='primary']:hover {
+  @apply btn-secondary-v2;
 }
