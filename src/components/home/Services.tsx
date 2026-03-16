@@ -16,14 +16,14 @@ const servicesData: ServiceItem[] = [
     id: 1,
     icon: 'ns-shape-47',
     title: 'Request coverage',
-    description: 'Request SOL coverage for a trade on any token. Set amount, duration, and premium; the crowd backs it.',
+    description: 'Request ETH coverage for a trade on any token. Set amount, duration, and premium; the crowd backs it.',
     delay: 0.4,
   },
   {
     id: 2,
     icon: 'ns-shape-12',
     title: 'Underwrite & earn',
-    description: 'Stake SOL to underwrite open requests. Earn premium when trades survive; capital is at risk if they rug.',
+    description: 'Stake ETH to underwrite open requests. Earn premium when trades survive; capital is at risk if they rug.',
     delay: 0.5,
   },
   {
@@ -44,14 +44,14 @@ const servicesData: ServiceItem[] = [
     id: 5,
     icon: 'ns-shape-52',
     title: 'Transparent tiers',
-    description: 'Tiered by coverage size—e.g. 1 SOL gets 0.1% supply requirement, 5 SOL gets 0.2%—so terms are predictable.',
+    description: 'Tiered by coverage size—e.g. 1 ETH gets 0.1% supply requirement, 5 ETH gets 0.2%—so terms are predictable.',
     delay: 0.8,
   },
   {
     id: 6,
     icon: 'ns-shape-35',
-    title: 'SOL-native',
-    description: 'All coverage and stakes in SOL. No separate stablecoin; simple, on-chain crowd underwriting for degen trades.',
+    title: 'ETH-native',
+    description: 'All coverage and stakes in ETH. No separate stablecoin; simple, on-chain crowd underwriting for degen trades.',
     delay: 0.9,
   },
 ];
@@ -74,7 +74,7 @@ const Services = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p className="text-accent/60 lg:mx-auto lg:max-w-[420px]">
-                Request SOL coverage for your trades, or stake SOL to underwrite others—all gated by governance token holding.
+                Request ETH coverage for your trades, or stake ETH to underwrite others—all gated by governance token holding.
               </p>
             </RevealAnimation>
           </div>

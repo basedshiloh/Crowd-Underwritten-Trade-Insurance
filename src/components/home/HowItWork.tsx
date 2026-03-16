@@ -14,7 +14,7 @@ const HowItWork = () => {
           </RevealAnimation>
           <RevealAnimation delay={0.3}>
             <p className="mx-auto max-w-[420px]">
-              Request SOL coverage for a trade, get backed by the crowd, and resolve at expiry—simple and token-gated.
+              Request ETH coverage for a trade, get backed by the crowd, and resolve at expiry—simple and token-gated.
             </p>
           </RevealAnimation>
         </div>
@@ -27,7 +27,7 @@ const HowItWork = () => {
               <div className="border-background-12 text-secondary rounded-[60px] border-8 bg-white px-9 py-2.5">1</div>
               <div className="space-y-1">
                 <h5>Request coverage</h5>
-                <p className="text-tagline-1">Create a coverage request: token, SOL amount, duration, and premium. You must hold the required % of the governance token.</p>
+                <p className="text-tagline-1">Create a coverage request: token, ETH amount, duration, and premium. You must hold the required % of the governance token.</p>
               </div>
             </div>
           </RevealAnimation>
@@ -37,7 +37,7 @@ const HowItWork = () => {
               <div className="space-y-1">
                 <h5>Underwriters stake</h5>
                 <p className="text-tagline-1">
-                  Others with enough token holding stake SOL to back your request. When the pool is filled, coverage is live.
+                  Others with enough token holding stake ETH to back your request. When the pool is filled, coverage is live.
                 </p>
               </div>
             </div>
@@ -47,7 +47,7 @@ const HowItWork = () => {
               <div className="border-background-12 text-secondary rounded-[60px] border-8 bg-white px-9 py-2.5">3</div>
               <div className="space-y-1">
                 <h5>Resolve &amp; payout</h5>
-                <p className="text-tagline-1">At expiry, market cap vs. threshold decides: survived → underwriters earn premium; rug → coverage pays out from staked SOL.</p>
+                <p className="text-tagline-1">At expiry, market cap vs. threshold decides: survived → underwriters earn premium; rug → coverage pays out from staked ETH.</p>
               </div>
             </div>
           </RevealAnimation>

@@ -20,8 +20,8 @@ const About = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.3} direction="left">
               <p className="mb-8 md:mb-12 lg:mb-8">
-                Traders request SOL coverage for risky token trades. Underwriters stake SOL to back them—no single treasury. You must hold a tiered amount of the governance token to participate: higher coverage means a higher hold
-                requirement. Survival is decided by market cap at resolution vs placement. If the token survives, underwriters earn the premium; if it rugs, coverage is paid from staked SOL.
+                Traders request ETH coverage for risky token trades. Underwriters stake ETH to back them—no single treasury. You must hold a tiered amount of the governance token to participate: higher coverage means a higher hold
+                requirement. Survival is decided by market cap at resolution vs placement. If the token survives, underwriters earn the premium; if it rugs, coverage is paid from staked ETH.
               </p>
             </RevealAnimation>
             <RevealAnimation delay={0.4} direction="left">

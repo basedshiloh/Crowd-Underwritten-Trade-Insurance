@@ -25,7 +25,7 @@ const Hero = () => {
           </RevealAnimation>
           <RevealAnimation delay={0.2}>
             <p className="text-accent/60 mx-auto mb-7 max-w-[500px] md:mb-10 lg:mb-14">
-              Request SOL coverage for risky trades. Others stake SOL to underwrite you—earn premium when the token
+              Request ETH coverage for risky trades. Others stake ETH to underwrite you—earn premium when the token
               survives, or pay out from staked collateral if it rugs. Hold the governance token to participate.
             </p>
           </RevealAnimation>

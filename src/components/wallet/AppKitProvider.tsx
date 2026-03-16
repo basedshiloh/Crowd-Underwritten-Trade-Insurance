@@ -1,8 +1,8 @@
 'use client';
 
 import { createAppKit } from '@reown/appkit/react';
-import { SolanaAdapter } from '@reown/appkit-adapter-solana/react';
-import { solana } from '@reown/appkit/networks';
+import { EthersAdapter } from '@reown/appkit-adapter-ethers';
+import { base } from '@reown/appkit/networks';
 import type { ReactNode } from 'react';
 
 // Get projectId from https://dashboard.reown.com – set in .env.local as NEXT_PUBLIC_PROJECT_ID
@@ -12,17 +12,17 @@ const projectId = process.env.NEXT_PUBLIC_PROJECT_ID ?? '';
 // https://docs.reown.com/appkit/next/core/installation
 if (projectId) {
   try {
-    const solanaAdapter = new SolanaAdapter();
+    const ethersAdapter = new EthersAdapter();
     const metadata = {
       name: 'Crowd-Underwritten Trade Insurance',
-      description: 'SOL-based, token-gated crowd underwriting for degen trades.',
+      description: 'ETH-based, token-gated crowd underwriting for degen trades.',
       url: typeof window !== 'undefined' ? window.location.origin : 'https://example.com',
       icons: ['https://avatars.githubusercontent.com/u/179229932'],
     };
     createAppKit({
-      adapters: [solanaAdapter],
-      networks: [solana],
-      defaultNetwork: solana,
+      adapters: [ethersAdapter],
+      networks: [base],
+      defaultNetwork: base,
       metadata,
       projectId,
       // Theming per https://docs.reown.com/appkit/nuxt/core/theming

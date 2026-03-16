@@ -29,7 +29,7 @@ const CTA = () => {
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
                 <p>
-                  Request SOL coverage for your next trade, or stake SOL to back others and earn premium when tokens
+                  Request ETH coverage for your next trade, or stake ETH to back others and earn premium when tokens
                   survive.
                 </p>
               </RevealAnimation>

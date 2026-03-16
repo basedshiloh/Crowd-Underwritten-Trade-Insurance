@@ -65,21 +65,21 @@ function TradeCard({
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <p className="text-tagline-2 font-medium text-secondary dark:text-accent">
-            {request.tokenMint} · {request.coverageAmountSol} SOL
+            {request.tokenMint} · {request.coverageAmountSol} ETH
           </p>
           <p className="text-tagline-3 text-secondary/70 dark:text-accent/70">
-            Premium {request.premiumSol} SOL · {request.durationHours}h · ID: {request.id}
+            Premium {request.premiumSol} ETH · {request.durationHours}h · ID: {request.id}
           </p>
           {type === 'underwritten' && stakeSol != null && (
             <p className="mt-1 text-tagline-3 text-primary-600 dark:text-primary-400">
-              Your stake: {stakeSol} SOL
+              Your stake: {stakeSol} ETH
             </p>
           )}
         </div>
         <ProgressBadge label={progress.label} variant={progress.variant} />
       </div>
       <div className="mt-3 flex flex-wrap items-center gap-2 text-tagline-3 text-secondary/70 dark:text-accent/70">
-        <span>Total staked: {totalSol} SOL</span>
+        <span>Total staked: {totalSol} ETH</span>
         {request.status === 'resolved' && request.resolvedAt && (
           <span>Resolved {new Date(request.resolvedAt).toLocaleDateString()}</span>
         )}

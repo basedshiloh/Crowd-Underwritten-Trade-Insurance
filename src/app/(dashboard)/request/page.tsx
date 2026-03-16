@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   ...defaultMetadata,
   title: 'Request Coverage - Crowd-Underwritten Trade Insurance',
   description:
-    'Request SOL coverage for a trade on a token. Hold the required % of governance token supply to participate.',
+    'Request ETH coverage for a trade on a token. Hold the required % of governance token supply to participate.',
 };
 
 export default function RequestPage() {
@@ -20,7 +20,7 @@ export default function RequestPage() {
             Request coverage
           </h1>
           <p className="text-tagline-2 mb-6 text-secondary/80 dark:text-accent/80 sm:text-tagline-1 sm:mb-8">
-            Request SOL coverage for a trade on a token. You must hold at least the tier’s % of the
+            Request ETH coverage for a trade on a token. You must hold at least the tier’s % of the
             governance token supply to request at this size.
           </p>
           <RequestForm createCoverageAction={createCoverageAction} />
@@ -28,7 +28,7 @@ export default function RequestPage() {
             <Link href="/underwrite" className="text-primary-500 underline hover:no-underline">
               Underwrite trades
             </Link>{' '}
-            — stake SOL to back open coverage requests.
+            — stake ETH to back open coverage requests.
           </p>
         </div>
       </section>

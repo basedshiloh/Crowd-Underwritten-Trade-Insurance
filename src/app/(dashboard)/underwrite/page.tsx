@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   ...defaultMetadata,
   title: 'Underwrite Trades - Crowd-Underwritten Trade Insurance',
   description:
-    'Stake SOL to underwrite open coverage requests. Hold the required % of governance token supply to participate.',
+    'Stake ETH to underwrite open coverage requests. Hold the required % of governance token supply to participate.',
 };
 
 export default async function UnderwritePage() {
@@ -25,7 +25,7 @@ export default async function UnderwritePage() {
             Underwrite trades
           </h1>
           <p className="text-tagline-2 mb-6 text-secondary/80 dark:text-accent/80 sm:text-tagline-1 sm:mb-10">
-            Open coverage requests. Stake SOL to underwrite; you must hold at least the tier’s % of
+            Open coverage requests. Stake ETH to underwrite; you must hold at least the tier’s % of
             the governance token supply.
           </p>
 
@@ -52,8 +52,8 @@ export default async function UnderwritePage() {
                     <div className="mb-3 grid gap-1.5 text-tagline-2 text-secondary dark:text-accent sm:mb-4 sm:gap-2">
                       <p>
                         <strong>Token:</strong> {req.tokenMint} ·{' '}
-                        <strong>Coverage:</strong> {req.coverageAmountSol} SOL ·{' '}
-                        <strong>Premium:</strong> {req.premiumSol} SOL
+                        <strong>Coverage:</strong> {req.coverageAmountSol} ETH ·{' '}
+                        <strong>Premium:</strong> {req.premiumSol} ETH
                       </p>
                       <p>
                         Duration: {req.durationHours}h · Survival: market cap ≥{' '}
@@ -61,7 +61,7 @@ export default async function UnderwritePage() {
                       </p>
                       <p>
                         Required hold to participate: <strong>{requiredHold}%</strong> of supply ·
-                        Total staked: <strong>{totalSol} SOL</strong>
+                        Total staked: <strong>{totalSol} ETH</strong>
                       </p>
                       <p className="text-tagline-3 text-secondary/70 dark:text-accent/70">
                         Request ID: <code className="font-mono">{req.id}</code>

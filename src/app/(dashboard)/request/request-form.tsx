@@ -21,7 +21,7 @@ export function RequestForm({
       className="flex flex-col gap-4 rounded-xl border border-stroke-3 bg-background-4 p-6 dark:border-stroke-6 dark:bg-background-8"
     >
       <label className="flex flex-col gap-1.5">
-        <span className="text-tagline-1 font-semibold text-secondary dark:text-accent">Coverage (SOL)</span>
+        <span className="text-tagline-1 font-semibold text-secondary dark:text-accent">Coverage (ETH)</span>
         <input
           type="number"
           name="coverageAmountSol"
@@ -53,7 +53,7 @@ export function RequestForm({
         />
       </label>
       <label className="flex flex-col gap-1.5">
-        <span className="text-tagline-1 font-semibold text-secondary dark:text-accent">Premium (SOL, optional)</span>
+        <span className="text-tagline-1 font-semibold text-secondary dark:text-accent">Premium (ETH, optional)</span>
         <input
           type="number"
           name="premiumSol"

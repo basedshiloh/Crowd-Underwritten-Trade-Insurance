@@ -15,7 +15,7 @@ export async function underwriteAction(
   const userHoldPercentOfSupply = Number(formData.get('userHoldPercentOfSupply'));
 
   if (!requestId || amountStakedSol <= 0) {
-    return { ok: false, error: 'Request ID and stake amount (SOL) are required.' };
+    return { ok: false, error: 'Request ID and stake amount (ETH) are required.' };
   }
 
   const request = getRequest(requestId);

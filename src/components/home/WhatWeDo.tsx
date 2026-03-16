@@ -13,7 +13,7 @@ const WhatWeDo = () => {
             <h2
               ref={titleRef}
               className="split-text-team-title text-secondary font-inter-tight text-heading-5 sm:text-heading-4 md:text-heading-3 lg:text-heading-2 xl:text-heading-1 text-center font-light wrap-break-word 2xl:text-[88px] 2xl:leading-[120%]">
-              No central pool—traders request coverage in SOL, and the crowd stakes SOL to underwrite. Hold the
+              No central pool—traders request coverage in ETH, and the crowd stakes ETH to underwrite. Hold the
               governance token to participate; earn premium when the token survives, or pay out if it rugs.
             </h2>
           </div>

@@ -23,7 +23,7 @@ export function UnderwriteForm({
       <input type="hidden" name="requestId" value={requestId} />
       <input type="hidden" name="underwriter" value="web-user" />
       <label className="flex flex-col gap-1">
-        <span className="text-tagline-3 font-medium text-secondary dark:text-accent">Stake (SOL)</span>
+        <span className="text-tagline-3 font-medium text-secondary dark:text-accent">Stake (ETH)</span>
         <input
           type="number"
           name="amountStakedSol"
@@ -54,7 +54,7 @@ export function UnderwriteForm({
         disabled={pending}
         className="rounded bg-primary-600 px-3 py-1.5 text-tagline-2 font-medium text-white hover:bg-primary-500 disabled:opacity-50"
       >
-        {pending ? 'Staking…' : 'Stake SOL'}
+        {pending ? 'Staking…' : 'Stake ETH'}
       </button>
       {state?.ok === true && (
         <span className="text-tagline-2 text-ns-green">Staked.</span>

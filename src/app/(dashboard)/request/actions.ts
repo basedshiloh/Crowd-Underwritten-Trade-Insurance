@@ -19,7 +19,7 @@ export async function createCoverageAction(
   const requester = String(formData.get('requester') ?? 'anon');
 
   if (!tokenMint || coverageAmountSol <= 0) {
-    return { ok: false, error: 'Token and coverage (SOL) are required.' };
+    return { ok: false, error: 'Token and coverage (ETH) are required.' };
   }
 
   const result = createCoverageRequest({

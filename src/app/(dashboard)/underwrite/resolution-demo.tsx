@@ -45,7 +45,7 @@ export function ResolutionDemo({
         </strong>
         {outcome === 'survived'
           ? ' → underwriters earn premium'
-          : ' → coverage paid from staked SOL'}
+          : ' → coverage paid from staked ETH'}
       </p>
     </div>
   );

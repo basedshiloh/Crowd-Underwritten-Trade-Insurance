@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const DEFAULT_URL = 'https://insure.trade/';
 export const DEFAULT_TITLE = 'Insure – Crowd-Underwritten Trade Insurance for Degens';
 export const DEFAULT_DESCRIPTION =
-  'Insure is a SOL-based, crowd-underwritten trade insurance protocol for degens. Request coverage on high-conviction trades or stake SOL to underwrite and earn yield, governed by token-gated collective intelligence.';
+  'Insure is an ETH-based, crowd-underwritten trade insurance protocol for degens. Request coverage on high-conviction trades or stake ETH to underwrite and earn yield, governed by token-gated collective intelligence.';
 export const DEFAULT_IMAGE_URL = '/images/metatags.png';
 
 const defaultMetadata: Metadata = {
