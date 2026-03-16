@@ -96,7 +96,7 @@ const Services = () => {
           </div>
         </div>
         <RevealAnimation delay={1}>
-          <div className="mx-auto flex w-[90%] flex-col items-center justify-center gap-4 md:w-auto md:gap-6">
+          <div className="mx-auto flex w-[90%] flex-col items-center justify-center gap-4 md:w-auto md:flex-row md:gap-6">
             <LinkButton
               href="/request"
               btnClass="btn-xl-v2 btn-v2-white !border-0 group-hover/btn-v2:btn-secondary-v2">
