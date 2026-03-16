@@ -3,7 +3,6 @@ import HeaderWrapper from '@/components/shared/HeaderWrapper';
 import SmoothScrollProvider from '@/components/shared/SmoothScroll';
 import Footer from '@/components/shared/footer/Footer';
 import { AppContextProvider } from '@/context/AppContext';
-import { interTight } from '@/utils/font';
 import { generateMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
 import { ReactNode, Suspense } from 'react';
@@ -20,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${interTight.variable} antialiased`}>
+      <body className="antialiased">
         <AppContextProvider>
           <AppKitProvider>
             <Suspense>

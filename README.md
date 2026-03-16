@@ -386,6 +386,8 @@ The project can be deployed to:
 1. **Build the project**: Run `npm run build` locally to test
 2. **Choose platform**: Select your preferred hosting provider
 3. **Configure environment**: Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_PROJECT_ID` (get one at [Reown Dashboard](https://dashboard.reown.com)) for wallet connection via [Reown AppKit](https://docs.reown.com/appkit/overview) (Solana only).
+   - **Local**: Use `.env.local` (gitignored). Restart the dev server after changing it.
+   - **Vercel**: `.env.local` is not deployed. In the Vercel project go to **Settings → Environment Variables**, add `NEXT_PUBLIC_PROJECT_ID` with your Reown project ID, then **redeploy**.
 4. **Deploy**: Follow platform-specific deployment instructions
 
 ## 🔍 Browser Support
