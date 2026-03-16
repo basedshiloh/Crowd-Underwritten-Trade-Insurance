@@ -8,4 +8,10 @@ export const footerLinks: FooterData[] = [
       { label: 'Underwrite Trades', href: '/underwrite' },
     ],
   },
+  {
+    title: 'Resources',
+    links: [
+      { label: 'Documentation', href: 'https://insure-agent.gitbook.io/insure-agent-docs/' },
+    ],
+  },
 ];

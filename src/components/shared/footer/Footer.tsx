@@ -30,7 +30,7 @@ const Footer = () => {
                   <Image src={DarkLogo} className="hidden dark:block" alt="NextSass" />
                 </figure>
                 <p className="text-secondary dark:text-accent mt-4 mb-7">
-                  Build smarter experiences with flexible tools to grow alongside your business.
+                  Powering crypto traders with intelligent risk tools and decentralized underwriting.
                 </p>
               </div>
             </RevealAnimation>
@@ -62,7 +62,7 @@ const Footer = () => {
           <FooterDivider className="bg-stroke-2 dark:bg-accent/5" />
           <RevealAnimation delay={0.7} offset={10} start="top 105%">
             <p className="text-secondary dark:text-accent/60">
-              Copyright &copy;NextSaaS – smart application for modern business
+              Copyright &copy; Insure – intelligent risk insights and decentralized underwriting for crypto markets
             </p>
           </RevealAnimation>
         </div>
