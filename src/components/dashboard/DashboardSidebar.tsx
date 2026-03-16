@@ -41,28 +41,29 @@ export function DashboardSidebar({ open = true, onClose }: DashboardSidebarProps
 
       <aside
         className={cn(
-          'flex flex-col border-r border-stroke-1 bg-background-1 dark:border-stroke-6 dark:bg-background-8',
-          'w-56 flex-shrink-0',
+          'flex flex-col flex-shrink-0 w-[240px]',
+          'bg-white dark:bg-[#0d1117]',
+          'border-r border-[#e5e7eb] dark:border-[#21262d]',
           'md:relative md:translate-x-0',
           onClose
             ? cn(
-                'fixed inset-y-0 left-0 z-50 h-full w-56 transform transition-transform duration-200 ease-out',
+                'fixed inset-y-0 left-0 z-50 h-full w-[240px] transform transition-transform duration-200 ease-out',
                 open ? 'translate-x-0' : '-translate-x-full'
               )
             : ''
         )}
       >
-        <div className="flex h-full flex-col py-6 px-4">
+        <div className="flex h-full flex-col py-8 px-5">
           {onClose && (
             <div className="mb-6 flex items-center justify-between md:hidden">
-              <span className="text-tagline-2 font-medium uppercase tracking-wider text-secondary/70 dark:text-accent/70">
+              <span className="text-sm font-medium text-[#57606a] dark:text-[#8b949e]">
                 Menu
               </span>
               <button
                 type="button"
                 aria-label="Close menu"
                 onClick={onClose}
-                className="flex size-9 items-center justify-center rounded-md border border-stroke-1 bg-background-2 text-secondary hover:bg-background-3 dark:border-stroke-6 dark:bg-background-9 dark:text-accent dark:hover:bg-background-7 transition-colors"
+                className="flex size-9 items-center justify-center rounded-lg text-[#1a1a1c] hover:bg-[#f3f4f6] dark:text-[#e6edf3] dark:hover:bg-[#21262d] transition-colors"
               >
                 <span className="sr-only">Close</span>
                 <svg className="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -71,10 +72,10 @@ export function DashboardSidebar({ open = true, onClose }: DashboardSidebarProps
               </button>
             </div>
           )}
-          <p className="text-tagline-2 mb-6 font-medium uppercase tracking-wider text-secondary/60 dark:text-accent/50">
+          <h2 className="text-base font-semibold text-[#1a1a1c] dark:text-[#e6edf3] mb-6">
             Dashboard
-          </p>
-          <nav className="flex flex-col gap-0.5">
+          </h2>
+          <nav className="flex flex-col" role="list">
             {navItems.map((item) => {
               const isActive =
                 pathname === item.href ||
@@ -84,11 +85,13 @@ export function DashboardSidebar({ open = true, onClose }: DashboardSidebarProps
                   key={item.label}
                   href={item.href}
                   onClick={onClose}
+                  role="listitem"
                   className={cn(
-                    'text-tagline-1 rounded-md py-2.5 pl-4 pr-3 font-medium transition-colors duration-150 border-l-2',
+                    'text-[15px] py-2.5 pl-3 pr-3 rounded-md font-medium transition-colors duration-150',
+                    'border-l-[3px] border-transparent -ml-px pl-[15px]',
                     isActive
-                      ? 'border-primary-500 bg-primary-100 text-primary-700 dark:border-primary-500 dark:bg-primary-500/15 dark:text-primary-300'
-                      : 'border-transparent text-secondary/80 hover:bg-background-2 hover:text-secondary dark:text-accent/70 dark:hover:bg-background-9 dark:hover:text-accent'
+                      ? 'border-[#864ffe] bg-[#f4f2fe] text-[#6d1fe2] dark:border-[#a585ff] dark:bg-[#864ffe]/10 dark:text-[#c3b1ff]'
+                      : 'text-[#57606a] hover:bg-[#f6f8fa] hover:text-[#1a1a1c] dark:text-[#8b949e] dark:hover:bg-[#21262d] dark:hover:text-[#e6edf3]'
                   )}
                 >
                   {item.label}
