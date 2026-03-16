@@ -33,7 +33,7 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
       <header
         onMouseLeave={() => handleMenuHover(null)}
         className={cn(
-          'lp:!max-w-[1290px] fixed top-5 left-1/2 z-50 mx-auto w-full max-w-[350px] -translate-x-1/2 rounded-full backdrop-blur-[25px] transition-all duration-500 ease-in-out min-[425px]:max-w-[375px] min-[500px]:max-w-[450px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px]',
+          'lp:!max-w-[1290px] fixed top-5 left-1/2 z-50 mx-auto w-full max-w-[350px] -translate-x-1/2 rounded-md backdrop-blur-[25px] transition-all duration-500 ease-in-out min-[425px]:max-w-[375px] min-[500px]:max-w-[450px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px]',
           showTopNav ? 'top-14 max-md:!top-14' : 'top-5',
           isScrolled && 'bg-background-8 !top-2',
         )}>
@@ -41,7 +41,7 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
           <div>
             <div
               className={cn(
-                'bg-accent/10 flex items-center justify-between rounded-full px-2.5 py-2.5 backdrop-blur-[25px] xl:py-0',
+                'bg-accent/10 flex items-center justify-between rounded-md px-2.5 py-2.5 backdrop-blur-[25px] xl:py-0',
                 route === '/' ? 'bg-accent/10' : 'bg-background-5',
               )}>
               <div>
