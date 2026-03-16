@@ -6,3 +6,11 @@
 .nav-hamburger-close span {
   @apply transition-all duration-200 ease-in-out;
 }
+
+/* Override Reown AppKit primary button inside our themed button wrapper */
+.group\\/btn-v2 button[data-variant='primary'] {
+  background-color: #ffffff !important;
+  color: var(--color-secondary) !important;
+  border-color: var(--color-stroke-3) !important;
+  border-width: 1px !important;
+}
