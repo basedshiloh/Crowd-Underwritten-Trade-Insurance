@@ -12,13 +12,13 @@ const LinkButton = ({ className, href, btnClass, children }: LinkButtonProps) =>
   return (
     <div
       className={cn(
-        'group/btn-v2 mx-auto inline-block w-[85%] rounded-full transition-transform duration-500 ease-in-out md:mx-0 md:w-auto',
+        'group/btn-v2 mx-auto inline-block w-[85%] rounded-md transition-transform duration-500 ease-in-out md:mx-0 md:w-auto',
         className,
       )}>
       <Link
         href={href}
         className={cn(
-          'mx-auto inline-flex h-12 w-full cursor-pointer items-center justify-center gap-1.5 rounded-full text-center font-medium text-nowrap lowercase transition-all duration-500 ease-in-out md:mx-0 md:h-auto md:w-auto',
+          'mx-auto inline-flex h-12 w-full cursor-pointer items-center justify-center gap-1.5 rounded-md text-center font-medium text-nowrap lowercase transition-all duration-500 ease-in-out md:mx-0 md:h-auto md:w-auto',
           btnClass,
         )}>
         <span className="inline-block transition-transform duration-300 ease-in-out first-letter:uppercase">
