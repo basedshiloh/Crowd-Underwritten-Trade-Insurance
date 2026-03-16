@@ -5,7 +5,7 @@ import { MobileMenuProvider } from '@/context/MobileMenuContext';
 import { mobileMenuData } from '@/data/navbar-data';
 import { useNavbarScroll } from '@/hooks/useScrollHeader';
 import { cn } from '@/utils/cn';
-import mainLogo from '@public/images/shared/insurance-logo.svg';
+import mainLogo from '@public/images/shared/insure-logo.svg';
 import mobileLogo from '@public/images/shared/insurance-logogram.svg';
 import Image from 'next/image';
 import Link from 'next/link';
