@@ -6,8 +6,7 @@ import { mobileMenuData } from '@/data/navbar-data';
 import { useNavbarScroll } from '@/hooks/useScrollHeader';
 import { cn } from '@/utils/cn';
 import mainLogo from '@public/images/shared/insurance-logo.svg';
-import logoDark from '@public/images/shared/logo-dark.svg';
-import logo from '@public/images/shared/logo.svg';
+import mobileLogo from '@public/images/shared/insurance-logogram.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -49,8 +48,7 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
                     <Image src={mainLogo} alt="NextSaaS" className="dark:invert" priority />
                   </figure>
                   <figure className="block max-w-[44px] lg:hidden">
-                    <Image src={logo} alt="NextSaaS" className="block w-full dark:hidden" priority />
-                    <Image src={logoDark} alt="NextSaaS" className="hidden w-full dark:block" priority />
+                    <Image src={mobileLogo} alt="Insure" className="block w-full" priority />
                   </figure>
                 </Link>
               </div>
