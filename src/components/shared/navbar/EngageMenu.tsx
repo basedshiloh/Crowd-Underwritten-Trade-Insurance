@@ -1,5 +1,5 @@
 'use client';
-import { SupportIcon, TestimonialIcon } from '@/icons/menu-icon';
+import { TestimonialIcon } from '@/icons/menu-icon';
 import { cn } from '@/utils/cn';
 import Link from 'next/link';
 import type { ComponentType } from 'react';
@@ -13,12 +13,6 @@ type EngageLink = {
 };
 
 const engageLinks: EngageLink[] = [
-  {
-    title: 'Support',
-    description: 'Access support resources',
-    href: '/support',
-    icon: SupportIcon,
-  },
   {
     title: 'Testimonials',
     description: 'See client feedback',

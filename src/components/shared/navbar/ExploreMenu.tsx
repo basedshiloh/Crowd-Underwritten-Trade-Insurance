@@ -28,14 +28,9 @@ type ExploreSection = {
 const exploreSections: ExploreSection[] = [
   {
     title: 'Product',
-    items: [
-      { label: 'Features', href: '/features' },
-      { label: 'Integrations', href: '/integration' },
-      { label: 'Process', href: '/process' },
-      { label: 'Press', href: '/press' },
-    ],
+    items: [{ label: 'Press', href: '/press' }],
     cta: {
-      href: '/features',
+      href: '/press',
       icon: ExploreProductIcon,
       title: 'Product',
       description: "Discover what's possible",
@@ -43,26 +38,12 @@ const exploreSections: ExploreSection[] = [
   },
   {
     title: 'Resources',
-    items: [{ label: 'Blog', href: '/blog' }],
+    items: [{ label: 'Docs', href: '/docs' }],
     cta: {
-      href: '/blog',
+      href: '/docs',
       icon: ExploreResourcesIcon,
       title: 'Resources',
       description: 'Browse helpful content',
-    },
-  },
-  {
-    title: 'Pricing & Account',
-    items: [
-      { label: 'Plans', href: '/pricing' },
-      { label: 'Login', href: '/login' },
-      { label: 'Sign Up', href: '/signup' },
-    ],
-    cta: {
-      href: '/pricing',
-      icon: ExplorePricingAndAccountIcon,
-      title: 'Pricing & Account',
-      description: 'View subscription plans',
     },
   },
 ];

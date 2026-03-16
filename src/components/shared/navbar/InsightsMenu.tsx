@@ -1,5 +1,5 @@
 'use client';
-import { AnalyticsIcon, ChangeLogIcon, GlossaryIcon, WhitePaperIcon } from '@/icons/menu-icon';
+import { ChangeLogIcon } from '@/icons/menu-icon';
 import { cn } from '@/utils/cn';
 import Link from 'next/link';
 import type { ComponentType } from 'react';
@@ -13,24 +13,6 @@ type InsightsLink = {
 };
 
 const insightLinks: InsightsLink[] = [
-  {
-    title: 'Analytics',
-    description: 'Track performance metrics',
-    href: '/analytics',
-    icon: AnalyticsIcon,
-  },
-  {
-    title: 'Whitepaper',
-    description: 'Download research papers',
-    href: '/whitepaper',
-    icon: WhitePaperIcon,
-  },
-  {
-    title: 'Glossary',
-    description: 'Browse key terms and definitions',
-    href: '/glossary',
-    icon: GlossaryIcon,
-  },
   {
     title: 'Changelog',
     description: 'View latest updates and changes',

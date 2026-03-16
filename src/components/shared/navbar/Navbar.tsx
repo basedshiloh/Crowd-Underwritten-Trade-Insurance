@@ -129,13 +129,6 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
                   </li>
                   <li className="py-2.5">
                     <Link
-                      href="/blog"
-                      className="text-tagline-1 text-accent hover:border-stroke-8 flex items-center gap-1 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200 hover:text-white">
-                      Blog
-                    </Link>
-                  </li>
-                  <li className="py-2.5">
-                    <Link
                       href="/contact-us"
                       className="text-tagline-1 text-accent hover:border-stroke-8 flex items-center gap-1 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200 hover:text-white">
                       Contact us
@@ -143,7 +136,12 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
                   </li>
                 </ul>
               </nav>
-              <div className="hidden items-center justify-center xl:flex">
+              <div className="hidden items-center justify-center gap-3 xl:flex">
+                <Link
+                  href="/docs"
+                  className="btn-v2-white !inline-flex !h-12 !min-w-0 !cursor-pointer !items-center !justify-center !gap-1.5 !rounded-full !border-0 !px-5 !font-medium !text-nowrap !transition-all !duration-500 ease-in-out">
+                  Docs
+                </Link>
                 <AppKitConnectButton className="!inline-flex !h-12 !min-w-0 !cursor-pointer !items-center !justify-center !gap-1.5 !rounded-full !border-0 !px-5 !font-medium !lowercase !text-nowrap !transition-all !duration-500 ease-in-out btn-xl-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2" />
               </div>
               <div className="flex items-center gap-2 xl:hidden">
