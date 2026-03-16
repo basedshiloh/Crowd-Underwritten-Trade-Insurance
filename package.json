@@ -10,7 +10,7 @@
     "lint:fix": "eslint --fix .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "postinstall": "tsx folder-rename.ts --utb"
+    "rename-folders": "tsx folder-rename.ts"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
