@@ -56,6 +56,13 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
               </div>
               <nav className="hidden items-center xl:flex">
                 <ul className="flex items-center">
+                  <li className="group/nav-item relative cursor-pointer py-2.5">
+                    <Link
+                      href="/"
+                      className="text-tagline-1 text-accent hover:border-stroke-8 flex items-center gap-1 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200 hover:text-white">
+                      <span>Home</span>
+                    </Link>
+                  </li>
                   <li
                     onMouseEnter={() => handleMenuHover('explore-mega-menu')}
                     data-menu="explore-mega-menu"
@@ -84,13 +91,6 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
                       href="/changelog"
                       className="text-tagline-1 text-accent hover:border-stroke-8 flex items-center gap-1 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200 hover:text-white">
                       <span>Changelog</span>
-                    </Link>
-                  </li>
-                  <li className="py-2.5">
-                    <Link
-                      href="/contact-us"
-                      className="text-tagline-1 text-accent hover:border-stroke-8 flex items-center gap-1 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200 hover:text-white">
-                      Contact us
                     </Link>
                   </li>
                 </ul>
