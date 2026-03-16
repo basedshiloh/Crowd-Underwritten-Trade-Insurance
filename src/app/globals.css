@@ -13,7 +13,9 @@
 @import '../styles/lenis.css';
 
 :root {
-  --apkt-tokens-core-backgroundAccentPrimary-base: #ffffff;
+  /* Force Reown AppKit primary button background to white */
+  --apkt-tokens-core-backgroundAccentPrimary-base: #ffffff !important;
+  --apkt-tokens-core-backgroundAccentPrimary: #ffffff !important;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
