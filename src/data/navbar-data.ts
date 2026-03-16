@@ -14,7 +14,7 @@ export const mobileMenuData: MobileMenuGroup[] = [
     id: 'resources',
     title: 'Resources',
     submenu: [
-      { id: 'docs', label: 'Docs', href: './docs' },
+      { id: 'docs', label: 'Docs', href: 'https://insure-agent.gitbook.io/insure-agent-docs/' },
     ],
   },
 ];

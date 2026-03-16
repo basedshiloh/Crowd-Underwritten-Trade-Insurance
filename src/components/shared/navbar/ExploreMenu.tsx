@@ -38,9 +38,9 @@ const exploreSections: ExploreSection[] = [
   },
   {
     title: 'Resources',
-    items: [{ label: 'Docs', href: '/docs' }],
+    items: [{ label: 'Docs', href: 'https://insure-agent.gitbook.io/insure-agent-docs/' }],
     cta: {
-      href: '/docs',
+      href: 'https://insure-agent.gitbook.io/insure-agent-docs/',
       icon: ExploreResourcesIcon,
       title: 'Resources',
       description: 'Browse helpful content',

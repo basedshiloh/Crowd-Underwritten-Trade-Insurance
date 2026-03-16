@@ -138,7 +138,7 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
               </nav>
               <div className="hidden items-center justify-center gap-3 xl:flex">
                 <Link
-                  href="/docs"
+                  href="https://insure-agent.gitbook.io/insure-agent-docs/"
                   className="btn-v2-white !inline-flex !h-12 !min-w-0 !cursor-pointer !items-center !justify-center !gap-1.5 !rounded-full !border-0 !px-5 !font-medium !text-nowrap !transition-all !duration-500 ease-in-out">
                   Docs
                 </Link>
