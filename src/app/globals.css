@@ -12,4 +12,8 @@
 @import '../styles/number-animation.css';
 @import '../styles/lenis.css';
 
+:root {
+  --apkt-tokens-core-backgroundAccentPrimary-base: #ffffff;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
