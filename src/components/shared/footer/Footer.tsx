@@ -24,8 +24,8 @@ const Footer = () => {
           <div className="col-span-12 lg:col-span-4">
             <RevealAnimation delay={0.3}>
               <div className="xl:max-w-[306px]">
-                <figure>
-                  <Image src={InsureLogogram} alt="Insure" />
+                <figure className="max-w-[44px]">
+                  <Image src={InsureLogogram} alt="Insure" className="block w-full" />
                 </figure>
                 <p className="text-secondary dark:text-accent mt-4 mb-7">
                   Powering crypto traders with intelligent risk tools and decentralized underwriting.
