@@ -6,6 +6,8 @@ import { UnderwriteForm } from './underwrite-form';
 import { ResolutionDemo } from './resolution-demo';
 import { defaultMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
+import { QuickActions } from '@/components/dashboard/QuickActions';
+import { QuickActionIcons } from '@/components/dashboard/QuickActionIcons';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
@@ -31,6 +33,29 @@ export default async function UnderwritePage() {
             Open coverage requests. Stake ETH to underwrite; you must hold at least the tier’s % of
             the governance token supply.
           </p>
+
+          <QuickActions
+            actions={[
+              {
+                icon: QuickActionIcons.request,
+                title: 'Request coverage',
+                description: 'Submit a new coverage request for a token trade.',
+                href: '/request',
+              },
+              {
+                icon: QuickActionIcons.myTrades,
+                title: 'My trades',
+                description: 'View your requested and underwritten coverage.',
+                href: '/trades',
+              },
+              {
+                icon: QuickActionIcons.overview,
+                title: 'Overview',
+                description: 'Back to the main dashboard and home.',
+                href: '/',
+              },
+            ]}
+          />
 
           {requests.length === 0 ? (
             <div className="rounded-xl border border-stroke-5 bg-background-4 p-6 text-center dark:border-stroke-6 dark:bg-background-9 sm:p-8">

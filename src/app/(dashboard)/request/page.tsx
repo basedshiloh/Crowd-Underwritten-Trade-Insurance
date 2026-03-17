@@ -3,6 +3,8 @@ import { createCoverageAction } from './actions';
 import { RequestForm } from './request-form';
 import { defaultMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
+import { QuickActions } from '@/components/dashboard/QuickActions';
+import { QuickActionIcons } from '@/components/dashboard/QuickActionIcons';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
@@ -23,6 +25,30 @@ export default function RequestPage() {
             Request ETH coverage for a trade on a token. You must hold at least the tier’s % of the
             governance token supply to request at this size.
           </p>
+
+          <QuickActions
+            actions={[
+              {
+                icon: QuickActionIcons.underwrite,
+                title: 'Underwrite trades',
+                description: 'Stake ETH to back open coverage requests.',
+                href: '/underwrite',
+              },
+              {
+                icon: QuickActionIcons.myTrades,
+                title: 'My trades',
+                description: 'View your requested and underwritten coverage.',
+                href: '/trades',
+              },
+              {
+                icon: QuickActionIcons.overview,
+                title: 'Overview',
+                description: 'Back to the main dashboard and home.',
+                href: '/',
+              },
+            ]}
+          />
+
           <RequestForm createCoverageAction={createCoverageAction} />
           <p className="mt-6 text-tagline-2 text-secondary/70 dark:text-accent/70 sm:mt-8">
             <Link href="/underwrite" className="text-primary-500 underline hover:no-underline">

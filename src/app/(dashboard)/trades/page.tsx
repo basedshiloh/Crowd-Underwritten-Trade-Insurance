@@ -8,6 +8,8 @@ import {
 import type { CoverageRequest } from '@/lib/coverage';
 import { defaultMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
+import { QuickActions } from '@/components/dashboard/QuickActions';
+import { QuickActionIcons } from '@/components/dashboard/QuickActionIcons';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
@@ -113,6 +115,29 @@ export default async function MyTradesPage() {
           <p className="text-tagline-2 mb-8 text-secondary/80 dark:text-accent/80 sm:text-tagline-1">
             Coverage you requested and trades you underwrote, with status and progress.
           </p>
+
+          <QuickActions
+            actions={[
+              {
+                icon: QuickActionIcons.request,
+                title: 'Request coverage',
+                description: 'Submit a new coverage request for a token trade.',
+                href: '/request',
+              },
+              {
+                icon: QuickActionIcons.underwrite,
+                title: 'Underwrite trades',
+                description: 'Stake ETH to back open coverage requests.',
+                href: '/underwrite',
+              },
+              {
+                icon: QuickActionIcons.overview,
+                title: 'Overview',
+                description: 'Back to the main dashboard and home.',
+                href: '/',
+              },
+            ]}
+          />
 
           <div className="space-y-10">
             <div>
