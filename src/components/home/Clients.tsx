@@ -1,6 +1,5 @@
 import { cn } from '@/utils/cn';
-import clientLogo10Dark from '@public/images/icons/client-logo-10-dark.svg';
-import clientLogo10 from '@public/images/icons/client-logo-10.svg';
+import uniswapLogo from '@public/images/uniswap-logo.png';
 import clientLogo6Dark from '@public/images/icons/client-logo-6-dark.svg';
 import clientLogo6 from '@public/images/icons/client-logo-6.svg';
 import clientLogo7Dark from '@public/images/icons/client-logo-7-dark.svg';
@@ -40,9 +39,9 @@ const clientLogos = [
   },
   {
     id: 5,
-    lightLogo: clientLogo10,
-    darkLogo: clientLogo10Dark,
-    alt: 'Client 5 logo',
+    lightLogo: uniswapLogo,
+    darkLogo: uniswapLogo,
+    alt: 'Uniswap logo',
   },
 ];
 
