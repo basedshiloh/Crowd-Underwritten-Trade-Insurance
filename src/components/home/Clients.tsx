@@ -42,6 +42,8 @@ const clientLogos = [
     lightLogo: uniswapLogo,
     darkLogo: uniswapLogo,
     alt: 'Uniswap logo',
+    width: 156,
+    height: 39,
   },
 ];
 
@@ -55,8 +57,17 @@ const Clients = () => {
           <Marquee autoFill speed={40}>
             <div className="flex items-center justify-center gap-8 py-20 md:py-25">
               {clientLogos.map((logo, index) => (
-                <figure key={logo.id} className={cn('min-w-[140px] md:min-w-[201px]', index === 0 && 'ml-8')}>
-                  <Image src={logo.lightLogo} alt={logo.alt} className="size-full object-contain" />
+                <figure
+                  key={logo.id}
+                  className={cn('min-w-[140px] md:min-w-[201px]', index === 0 && 'ml-8')}
+                >
+                  <Image
+                    src={logo.lightLogo}
+                    alt={logo.alt}
+                    width={logo.width ?? 156}
+                    height={logo.height ?? 39}
+                    className="h-[39px] w-[156px] object-contain"
+                  />
                 </figure>
               ))}
             </div>
