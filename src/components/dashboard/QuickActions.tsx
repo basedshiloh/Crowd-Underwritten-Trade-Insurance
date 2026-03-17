@@ -14,12 +14,12 @@ export function QuickActions({ actions }: { actions: QuickActionItem[] }) {
       <h2 className="text-heading-6 mb-4 font-semibold text-secondary dark:text-accent">
         Quick actions
       </h2>
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2">
         {actions.map(({ icon, title, description, href }) => (
           <Link
             key={href}
             href={href}
-            className="group flex gap-4 rounded-xl border border-stroke-5 bg-background-4 p-4 transition-colors hover:border-primary-500/30 hover:bg-primary-500/5 dark:border-stroke-6 dark:bg-background-8 dark:hover:border-primary-500/30 dark:hover:bg-primary-500/10"
+            className="group flex gap-4 rounded-xl border border-stroke-5/80 bg-background-4 p-4 transition-colors hover:border-primary-500/30 hover:bg-primary-500/5 dark:border-stroke-6/80 dark:bg-background-8 dark:hover:border-primary-500/30 dark:hover:bg-primary-500/10"
           >
             <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-lg bg-primary-500/10 text-primary-500 dark:bg-primary-500/15 dark:text-primary-400">
               {icon}
