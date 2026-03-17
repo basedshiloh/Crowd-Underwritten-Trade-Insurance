@@ -10,7 +10,23 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Crowd-Underwritten Trade Insurance',
+  title: 'Insure | Crowd-Underwritten Trade Insurance',
+  openGraph: {
+    ...defaultMetadata.openGraph,
+    title: 'Insure | Crowd-Underwritten Trade Insurance',
+    images: [
+      {
+        url: '/images/og-image.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    ...defaultMetadata.twitter,
+    title: 'Insure | Crowd-Underwritten Trade Insurance',
+    images: ['/images/og-image.png'],
+  },
 };
 
 const page = () => {
