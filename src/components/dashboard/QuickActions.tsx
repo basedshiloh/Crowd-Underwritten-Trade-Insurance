@@ -19,7 +19,7 @@ export function QuickActions({ actions }: { actions: QuickActionItem[] }) {
           <Link
             key={href}
             href={href}
-            className="group flex gap-4 rounded-xl border border-stroke-5-80 bg-background-4 p-4 transition-colors hover:border-primary-500/30 hover:bg-primary-500/5 dark:border-stroke-6-80 dark:bg-background-8 dark:hover:border-primary-500/30 dark:hover:bg-primary-500/10"
+            className="group flex gap-4 rounded-xl border border-stroke-3 bg-background-4 p-4 transition-colors hover:border-primary-500/30 hover:bg-primary-500/5 dark:border-stroke-3 dark:bg-background-8 dark:hover:border-primary-500/30 dark:hover:bg-primary-500/10"
           >
             <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-lg bg-primary-500/10 text-primary-500 dark:bg-primary-500/15 dark:text-primary-400">
               {icon}
