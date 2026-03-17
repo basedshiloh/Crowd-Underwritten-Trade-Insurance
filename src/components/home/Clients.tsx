@@ -1,9 +1,9 @@
 import { cn } from '@/utils/cn';
 import uniswapLogo from '@public/images/uniswap-logo.png';
 import clientLogo6Dark from '@public/images/cow-swap.svg';
-import clientLogo6 from '@public/images/icons/client-logo-6.svg';
-import clientLogo7Dark from '@public/images/icons/client-logo-7-dark.svg';
-import clientLogo7 from '@public/images/icons/client-logo-7.svg';
+import clientLogo6 from '@public/images/cow-swap.svg';
+import clientLogo7Dark from '@public/images/base-logo.svg';
+import clientLogo7 from '@public/images/base-logo.svg';
 import clientLogo8Dark from '@public/images/icons/client-logo-8-dark.svg';
 import clientLogo8 from '@public/images/icons/client-logo-8.svg';
 import clientLogo9Dark from '@public/images/icons/client-logo-9-dark.svg';
