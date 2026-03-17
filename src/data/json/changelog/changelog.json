@@ -13,7 +13,7 @@
       "General tuning of the Insure Agent risk model."
     ],
     "image": {
-      "src": "/images/ns-img-381.jpg",
+      "src": "/images/insure-changelog-march-v2.png",
       "alt": "changelog"
     }
   },
@@ -31,7 +31,7 @@
       "General performance tuning across the scan engine."
     ],
     "image": {
-      "src": "/images/ns-img-382.jpg",
+      "src": "/images/insure-changelog-march-v1.png",
       "alt": "changelog"
     }
   },
@@ -49,7 +49,7 @@
       "Expanded wallet-based risk indicators."
     ],
     "image": {
-      "src": "/images/ns-img-383.jpg",
+      "src": "/images/insure-changelog-february-v2.png",
       "alt": "changelog"
     }
   },
@@ -67,7 +67,7 @@
       "Additional monitoring across data ingestion services."
     ],
     "image": {
-      "src": "/images/ns-img-381.jpg",
+      "src": "/images/insure-changelog-february-v1.png",
       "alt": "changelog"
     }
   },
