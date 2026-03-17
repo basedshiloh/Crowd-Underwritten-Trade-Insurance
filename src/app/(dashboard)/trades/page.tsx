@@ -63,7 +63,7 @@ function TradeCard({
   const totalSol = totalStakedSol(request.id);
 
   return (
-    <article className="rounded-xl border border-stroke-5/80 bg-background-4 p-4 dark:border-stroke-6/80 dark:bg-background-9 sm:p-6">
+    <article className="rounded-xl border border-stroke-5-80 bg-background-4 p-4 dark:border-stroke-6-80 dark:bg-background-9 sm:p-6">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <p className="text-tagline-2 font-medium text-secondary dark:text-accent">
@@ -139,7 +139,7 @@ export default async function MyTradesPage() {
                 Requested by you
               </h2>
               {requested.length === 0 ? (
-                <div className="rounded-xl border border-stroke-5/80 bg-background-4 p-6 text-center dark:border-stroke-6/80 dark:bg-background-9">
+                <div className="rounded-xl border border-stroke-5-80 bg-background-4 p-6 text-center dark:border-stroke-6-80 dark:bg-background-9">
                   <p className="text-tagline-2 text-secondary/80 dark:text-accent/80">
                     No coverage requests yet.{' '}
                     <Link href="/request" className="text-primary-500 underline hover:no-underline">
@@ -163,7 +163,7 @@ export default async function MyTradesPage() {
                 Underwritten by you
               </h2>
               {underwrittenWithStake.length === 0 ? (
-                <div className="rounded-xl border border-stroke-5/80 bg-background-4 p-6 text-center dark:border-stroke-6/80 dark:bg-background-9">
+                <div className="rounded-xl border border-stroke-5-80 bg-background-4 p-6 text-center dark:border-stroke-6-80 dark:bg-background-9">
                   <p className="text-tagline-2 text-secondary/80 dark:text-accent/80">
                     No underwritten trades yet.{' '}
                     <Link href="/underwrite" className="text-primary-500 underline hover:no-underline">

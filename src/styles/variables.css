@@ -35,6 +35,8 @@ All the varaiables are added here
   --color-stroke-4: #eceff4;
   --color-stroke-5: #1b232f;
   --color-stroke-6: #202731;
+  --color-stroke-5-80: color-mix(in srgb, var(--color-stroke-5) 80%, transparent);
+  --color-stroke-6-80: color-mix(in srgb, var(--color-stroke-6) 80%, transparent);
   --color-stroke-7: #2a333e;
   --color-stroke-8: #303b49;
   --color-stroke-9: var(--color-background-8);
