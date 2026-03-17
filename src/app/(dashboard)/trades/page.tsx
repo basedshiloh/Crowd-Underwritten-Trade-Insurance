@@ -130,12 +130,6 @@ export default async function MyTradesPage() {
                 description: 'Stake ETH to back open coverage requests.',
                 href: '/underwrite',
               },
-              {
-                icon: QuickActionIcons.overview,
-                title: 'Overview',
-                description: 'Back to the main dashboard and home.',
-                href: '/',
-              },
             ]}
           />
 

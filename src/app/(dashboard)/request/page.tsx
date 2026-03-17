@@ -40,12 +40,6 @@ export default function RequestPage() {
                 description: 'View your requested and underwritten coverage.',
                 href: '/trades',
               },
-              {
-                icon: QuickActionIcons.overview,
-                title: 'Overview',
-                description: 'Back to the main dashboard and home.',
-                href: '/',
-              },
             ]}
           />
 
