@@ -34,8 +34,8 @@ const About = () => {
           </div>
           <RevealAnimation delay={0.2} direction="right" useSpring={true} duration={2.4}>
             <div className="order-2 overflow-hidden rounded-[20px]">
-              <figure className="overflow-hidden rounded-[20px] transition-all duration-300 ease-in-out hover:scale-105">
-                <Image src={aboutImage} alt="about image" className="h-full w-full object-cover" />
+              <figure className="relative aspect-[605/640] w-full overflow-hidden rounded-[20px] transition-all duration-300 ease-in-out hover:scale-105">
+                <Image src={aboutImage} alt="about image" fill className="object-cover" />
               </figure>
             </div>
           </RevealAnimation>
